@@ -1,0 +1,1937 @@
+/* This file has been generated automaticaly by extglgen */
+
+/*
+	extgl - OpenGL Extension Loading Library
+	Copyright (c) 2004, Trenkwalder Markus
+	All rights reserved. 
+	
+	Redistribution and use in source and binary forms, with or without
+	modification, are permitted provided that the following conditions
+	are met:
+	
+	- Redistributions of source code must retain the above copyright notice,
+	  this list of conditions and the following disclaimer.
+	  
+	- Redistributions in binary form must reproduce the above copyright
+	  notice, this list of conditions and the following disclaimer in the
+	  documentation and/or other materials provided with the distribution.
+	  
+	- Neither the name of extgl's copyright owner nor the names
+	  of its contributors may be used to endorse or promote products
+	  derived from this software without specific prior written permission.
+	  
+	THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+	"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+	LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+	A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+	OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+	SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+	TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+	PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+	LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING 
+	NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+	SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+	
+	Contact info:
+	email: trenki2@gmx.net web: trenki.50free.org
+*/
+
+/* Some parts are */
+
+/*
+** License Applicability. Except to the extent portions of this file are
+** made subject to an alternative license as permitted in the SGI Free
+** Software License B, Version 1.1 (the "License"), the contents of this
+** file are subject only to the provisions of the License. You may not use
+** this file except in compliance with the License. You may obtain a copy
+** of the License at Silicon Graphics, Inc., attn: Legal Services, 1600
+** Amphitheatre Parkway, Mountain View, CA 94043-1351, or at:
+** 
+** http://oss.sgi.com/projects/FreeB
+** 
+** Note that, as provided in the License, the Software is distributed on an
+** "AS IS" basis, with ALL EXPRESS AND IMPLIED WARRANTIES AND CONDITIONS
+** DISCLAIMED, INCLUDING, WITHOUT LIMITATION, ANY IMPLIED WARRANTIES AND
+** CONDITIONS OF MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A
+** PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+** 
+** Original Code. The Original Code is: OpenGL Sample Implementation,
+** Version 1.2.1, released January 26, 2000, developed by Silicon Graphics,
+** Inc. The Original Code is Copyright (c) 1991-2002 Silicon Graphics, Inc.
+** Copyright in any portions created by third parties is as indicated
+** elsewhere herein. All Rights Reserved.
+** 
+** Additional Notice Provisions: This software was created using the
+** OpenGL(R) version 1.2.1 Sample Implementation published by SGI, but has
+** not been independently verified as being compliant with the OpenGL(R)
+** version 1.2.1 Specification.
+*/	
+
+#ifndef _EXTGL_H_
+#define _EXTGL_H_
+
+#ifdef WIN32
+#	define WIN32_LEAN_AND_MEAN
+#	include <windows.h>
+#endif
+
+#include "gl.h"
+#include "glext.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+
+/* GL_VERSION_1_2 */
+extern PFNGLBLENDCOLORPROC glBlendColor;
+extern PFNGLBLENDEQUATIONPROC glBlendEquation;
+extern PFNGLDRAWRANGEELEMENTSPROC glDrawRangeElements;
+extern PFNGLCOLORTABLEPROC glColorTable;
+extern PFNGLCOLORTABLEPARAMETERFVPROC glColorTableParameterfv;
+extern PFNGLCOLORTABLEPARAMETERIVPROC glColorTableParameteriv;
+extern PFNGLCOPYCOLORTABLEPROC glCopyColorTable;
+extern PFNGLGETCOLORTABLEPROC glGetColorTable;
+extern PFNGLGETCOLORTABLEPARAMETERFVPROC glGetColorTableParameterfv;
+extern PFNGLGETCOLORTABLEPARAMETERIVPROC glGetColorTableParameteriv;
+extern PFNGLCOLORSUBTABLEPROC glColorSubTable;
+extern PFNGLCOPYCOLORSUBTABLEPROC glCopyColorSubTable;
+extern PFNGLCONVOLUTIONFILTER1DPROC glConvolutionFilter1D;
+extern PFNGLCONVOLUTIONFILTER2DPROC glConvolutionFilter2D;
+extern PFNGLCONVOLUTIONPARAMETERFPROC glConvolutionParameterf;
+extern PFNGLCONVOLUTIONPARAMETERFVPROC glConvolutionParameterfv;
+extern PFNGLCONVOLUTIONPARAMETERIPROC glConvolutionParameteri;
+extern PFNGLCONVOLUTIONPARAMETERIVPROC glConvolutionParameteriv;
+extern PFNGLCOPYCONVOLUTIONFILTER1DPROC glCopyConvolutionFilter1D;
+extern PFNGLCOPYCONVOLUTIONFILTER2DPROC glCopyConvolutionFilter2D;
+extern PFNGLGETCONVOLUTIONFILTERPROC glGetConvolutionFilter;
+extern PFNGLGETCONVOLUTIONPARAMETERFVPROC glGetConvolutionParameterfv;
+extern PFNGLGETCONVOLUTIONPARAMETERIVPROC glGetConvolutionParameteriv;
+extern PFNGLGETSEPARABLEFILTERPROC glGetSeparableFilter;
+extern PFNGLSEPARABLEFILTER2DPROC glSeparableFilter2D;
+extern PFNGLGETHISTOGRAMPROC glGetHistogram;
+extern PFNGLGETHISTOGRAMPARAMETERFVPROC glGetHistogramParameterfv;
+extern PFNGLGETHISTOGRAMPARAMETERIVPROC glGetHistogramParameteriv;
+extern PFNGLGETMINMAXPROC glGetMinmax;
+extern PFNGLGETMINMAXPARAMETERFVPROC glGetMinmaxParameterfv;
+extern PFNGLGETMINMAXPARAMETERIVPROC glGetMinmaxParameteriv;
+extern PFNGLHISTOGRAMPROC glHistogram;
+extern PFNGLMINMAXPROC glMinmax;
+extern PFNGLRESETHISTOGRAMPROC glResetHistogram;
+extern PFNGLRESETMINMAXPROC glResetMinmax;
+extern PFNGLTEXIMAGE3DPROC glTexImage3D;
+extern PFNGLTEXSUBIMAGE3DPROC glTexSubImage3D;
+extern PFNGLCOPYTEXSUBIMAGE3DPROC glCopyTexSubImage3D;
+
+/* GL_VERSION_1_3 */
+extern PFNGLACTIVETEXTUREPROC glActiveTexture;
+extern PFNGLCLIENTACTIVETEXTUREPROC glClientActiveTexture;
+extern PFNGLMULTITEXCOORD1DPROC glMultiTexCoord1d;
+extern PFNGLMULTITEXCOORD1DVPROC glMultiTexCoord1dv;
+extern PFNGLMULTITEXCOORD1FPROC glMultiTexCoord1f;
+extern PFNGLMULTITEXCOORD1FVPROC glMultiTexCoord1fv;
+extern PFNGLMULTITEXCOORD1IPROC glMultiTexCoord1i;
+extern PFNGLMULTITEXCOORD1IVPROC glMultiTexCoord1iv;
+extern PFNGLMULTITEXCOORD1SPROC glMultiTexCoord1s;
+extern PFNGLMULTITEXCOORD1SVPROC glMultiTexCoord1sv;
+extern PFNGLMULTITEXCOORD2DPROC glMultiTexCoord2d;
+extern PFNGLMULTITEXCOORD2DVPROC glMultiTexCoord2dv;
+extern PFNGLMULTITEXCOORD2FPROC glMultiTexCoord2f;
+extern PFNGLMULTITEXCOORD2FVPROC glMultiTexCoord2fv;
+extern PFNGLMULTITEXCOORD2IPROC glMultiTexCoord2i;
+extern PFNGLMULTITEXCOORD2IVPROC glMultiTexCoord2iv;
+extern PFNGLMULTITEXCOORD2SPROC glMultiTexCoord2s;
+extern PFNGLMULTITEXCOORD2SVPROC glMultiTexCoord2sv;
+extern PFNGLMULTITEXCOORD3DPROC glMultiTexCoord3d;
+extern PFNGLMULTITEXCOORD3DVPROC glMultiTexCoord3dv;
+extern PFNGLMULTITEXCOORD3FPROC glMultiTexCoord3f;
+extern PFNGLMULTITEXCOORD3FVPROC glMultiTexCoord3fv;
+extern PFNGLMULTITEXCOORD3IPROC glMultiTexCoord3i;
+extern PFNGLMULTITEXCOORD3IVPROC glMultiTexCoord3iv;
+extern PFNGLMULTITEXCOORD3SPROC glMultiTexCoord3s;
+extern PFNGLMULTITEXCOORD3SVPROC glMultiTexCoord3sv;
+extern PFNGLMULTITEXCOORD4DPROC glMultiTexCoord4d;
+extern PFNGLMULTITEXCOORD4DVPROC glMultiTexCoord4dv;
+extern PFNGLMULTITEXCOORD4FPROC glMultiTexCoord4f;
+extern PFNGLMULTITEXCOORD4FVPROC glMultiTexCoord4fv;
+extern PFNGLMULTITEXCOORD4IPROC glMultiTexCoord4i;
+extern PFNGLMULTITEXCOORD4IVPROC glMultiTexCoord4iv;
+extern PFNGLMULTITEXCOORD4SPROC glMultiTexCoord4s;
+extern PFNGLMULTITEXCOORD4SVPROC glMultiTexCoord4sv;
+extern PFNGLLOADTRANSPOSEMATRIXFPROC glLoadTransposeMatrixf;
+extern PFNGLLOADTRANSPOSEMATRIXDPROC glLoadTransposeMatrixd;
+extern PFNGLMULTTRANSPOSEMATRIXFPROC glMultTransposeMatrixf;
+extern PFNGLMULTTRANSPOSEMATRIXDPROC glMultTransposeMatrixd;
+extern PFNGLSAMPLECOVERAGEPROC glSampleCoverage;
+extern PFNGLCOMPRESSEDTEXIMAGE3DPROC glCompressedTexImage3D;
+extern PFNGLCOMPRESSEDTEXIMAGE2DPROC glCompressedTexImage2D;
+extern PFNGLCOMPRESSEDTEXIMAGE1DPROC glCompressedTexImage1D;
+extern PFNGLCOMPRESSEDTEXSUBIMAGE3DPROC glCompressedTexSubImage3D;
+extern PFNGLCOMPRESSEDTEXSUBIMAGE2DPROC glCompressedTexSubImage2D;
+extern PFNGLCOMPRESSEDTEXSUBIMAGE1DPROC glCompressedTexSubImage1D;
+extern PFNGLGETCOMPRESSEDTEXIMAGEPROC glGetCompressedTexImage;
+
+/* GL_VERSION_1_4 */
+extern PFNGLBLENDFUNCSEPARATEPROC glBlendFuncSeparate;
+extern PFNGLFOGCOORDFPROC glFogCoordf;
+extern PFNGLFOGCOORDFVPROC glFogCoordfv;
+extern PFNGLFOGCOORDDPROC glFogCoordd;
+extern PFNGLFOGCOORDDVPROC glFogCoorddv;
+extern PFNGLFOGCOORDPOINTERPROC glFogCoordPointer;
+extern PFNGLMULTIDRAWARRAYSPROC glMultiDrawArrays;
+extern PFNGLMULTIDRAWELEMENTSPROC glMultiDrawElements;
+extern PFNGLPOINTPARAMETERFPROC glPointParameterf;
+extern PFNGLPOINTPARAMETERFVPROC glPointParameterfv;
+extern PFNGLPOINTPARAMETERIPROC glPointParameteri;
+extern PFNGLPOINTPARAMETERIVPROC glPointParameteriv;
+extern PFNGLSECONDARYCOLOR3BPROC glSecondaryColor3b;
+extern PFNGLSECONDARYCOLOR3BVPROC glSecondaryColor3bv;
+extern PFNGLSECONDARYCOLOR3DPROC glSecondaryColor3d;
+extern PFNGLSECONDARYCOLOR3DVPROC glSecondaryColor3dv;
+extern PFNGLSECONDARYCOLOR3FPROC glSecondaryColor3f;
+extern PFNGLSECONDARYCOLOR3FVPROC glSecondaryColor3fv;
+extern PFNGLSECONDARYCOLOR3IPROC glSecondaryColor3i;
+extern PFNGLSECONDARYCOLOR3IVPROC glSecondaryColor3iv;
+extern PFNGLSECONDARYCOLOR3SPROC glSecondaryColor3s;
+extern PFNGLSECONDARYCOLOR3SVPROC glSecondaryColor3sv;
+extern PFNGLSECONDARYCOLOR3UBPROC glSecondaryColor3ub;
+extern PFNGLSECONDARYCOLOR3UBVPROC glSecondaryColor3ubv;
+extern PFNGLSECONDARYCOLOR3UIPROC glSecondaryColor3ui;
+extern PFNGLSECONDARYCOLOR3UIVPROC glSecondaryColor3uiv;
+extern PFNGLSECONDARYCOLOR3USPROC glSecondaryColor3us;
+extern PFNGLSECONDARYCOLOR3USVPROC glSecondaryColor3usv;
+extern PFNGLSECONDARYCOLORPOINTERPROC glSecondaryColorPointer;
+extern PFNGLWINDOWPOS2DPROC glWindowPos2d;
+extern PFNGLWINDOWPOS2DVPROC glWindowPos2dv;
+extern PFNGLWINDOWPOS2FPROC glWindowPos2f;
+extern PFNGLWINDOWPOS2FVPROC glWindowPos2fv;
+extern PFNGLWINDOWPOS2IPROC glWindowPos2i;
+extern PFNGLWINDOWPOS2IVPROC glWindowPos2iv;
+extern PFNGLWINDOWPOS2SPROC glWindowPos2s;
+extern PFNGLWINDOWPOS2SVPROC glWindowPos2sv;
+extern PFNGLWINDOWPOS3DPROC glWindowPos3d;
+extern PFNGLWINDOWPOS3DVPROC glWindowPos3dv;
+extern PFNGLWINDOWPOS3FPROC glWindowPos3f;
+extern PFNGLWINDOWPOS3FVPROC glWindowPos3fv;
+extern PFNGLWINDOWPOS3IPROC glWindowPos3i;
+extern PFNGLWINDOWPOS3IVPROC glWindowPos3iv;
+extern PFNGLWINDOWPOS3SPROC glWindowPos3s;
+extern PFNGLWINDOWPOS3SVPROC glWindowPos3sv;
+
+/* GL_VERSION_1_5 */
+extern PFNGLGENQUERIESPROC glGenQueries;
+extern PFNGLDELETEQUERIESPROC glDeleteQueries;
+extern PFNGLISQUERYPROC glIsQuery;
+extern PFNGLBEGINQUERYPROC glBeginQuery;
+extern PFNGLENDQUERYPROC glEndQuery;
+extern PFNGLGETQUERYIVPROC glGetQueryiv;
+extern PFNGLGETQUERYOBJECTIVPROC glGetQueryObjectiv;
+extern PFNGLGETQUERYOBJECTUIVPROC glGetQueryObjectuiv;
+extern PFNGLBINDBUFFERPROC glBindBuffer;
+extern PFNGLDELETEBUFFERSPROC glDeleteBuffers;
+extern PFNGLGENBUFFERSPROC glGenBuffers;
+extern PFNGLISBUFFERPROC glIsBuffer;
+extern PFNGLBUFFERDATAPROC glBufferData;
+extern PFNGLBUFFERSUBDATAPROC glBufferSubData;
+extern PFNGLGETBUFFERSUBDATAPROC glGetBufferSubData;
+extern PFNGLMAPBUFFERPROC glMapBuffer;
+extern PFNGLUNMAPBUFFERPROC glUnmapBuffer;
+extern PFNGLGETBUFFERPARAMETERIVPROC glGetBufferParameteriv;
+extern PFNGLGETBUFFERPOINTERVPROC glGetBufferPointerv;
+
+/* GL_VERSION_2_0 */
+extern PFNGLBLENDEQUATIONSEPARATEPROC glBlendEquationSeparate;
+extern PFNGLDRAWBUFFERSPROC glDrawBuffers;
+extern PFNGLSTENCILOPSEPARATEPROC glStencilOpSeparate;
+extern PFNGLSTENCILFUNCSEPARATEPROC glStencilFuncSeparate;
+extern PFNGLSTENCILMASKSEPARATEPROC glStencilMaskSeparate;
+extern PFNGLATTACHSHADERPROC glAttachShader;
+extern PFNGLBINDATTRIBLOCATIONPROC glBindAttribLocation;
+extern PFNGLCOMPILESHADERPROC glCompileShader;
+extern PFNGLCREATEPROGRAMPROC glCreateProgram;
+extern PFNGLCREATESHADERPROC glCreateShader;
+extern PFNGLDELETEPROGRAMPROC glDeleteProgram;
+extern PFNGLDELETESHADERPROC glDeleteShader;
+extern PFNGLDETACHSHADERPROC glDetachShader;
+extern PFNGLDISABLEVERTEXATTRIBARRAYPROC glDisableVertexAttribArray;
+extern PFNGLENABLEVERTEXATTRIBARRAYPROC glEnableVertexAttribArray;
+extern PFNGLGETACTIVEATTRIBPROC glGetActiveAttrib;
+extern PFNGLGETACTIVEUNIFORMPROC glGetActiveUniform;
+extern PFNGLGETATTACHEDSHADERSPROC glGetAttachedShaders;
+extern PFNGLGETATTRIBLOCATIONPROC glGetAttribLocation;
+extern PFNGLGETPROGRAMIVPROC glGetProgramiv;
+extern PFNGLGETPROGRAMINFOLOGPROC glGetProgramInfoLog;
+extern PFNGLGETSHADERIVPROC glGetShaderiv;
+extern PFNGLGETSHADERINFOLOGPROC glGetShaderInfoLog;
+extern PFNGLGETSHADERSOURCEPROC glGetShaderSource;
+extern PFNGLGETUNIFORMLOCATIONPROC glGetUniformLocation;
+extern PFNGLGETUNIFORMFVPROC glGetUniformfv;
+extern PFNGLGETUNIFORMIVPROC glGetUniformiv;
+extern PFNGLGETVERTEXATTRIBDVPROC glGetVertexAttribdv;
+extern PFNGLGETVERTEXATTRIBFVPROC glGetVertexAttribfv;
+extern PFNGLGETVERTEXATTRIBIVPROC glGetVertexAttribiv;
+extern PFNGLGETVERTEXATTRIBPOINTERVPROC glGetVertexAttribPointerv;
+extern PFNGLISPROGRAMPROC glIsProgram;
+extern PFNGLISSHADERPROC glIsShader;
+extern PFNGLLINKPROGRAMPROC glLinkProgram;
+extern PFNGLSHADERSOURCEPROC glShaderSource;
+extern PFNGLUSEPROGRAMPROC glUseProgram;
+extern PFNGLUNIFORM1FPROC glUniform1f;
+extern PFNGLUNIFORM2FPROC glUniform2f;
+extern PFNGLUNIFORM3FPROC glUniform3f;
+extern PFNGLUNIFORM4FPROC glUniform4f;
+extern PFNGLUNIFORM1IPROC glUniform1i;
+extern PFNGLUNIFORM2IPROC glUniform2i;
+extern PFNGLUNIFORM3IPROC glUniform3i;
+extern PFNGLUNIFORM4IPROC glUniform4i;
+extern PFNGLUNIFORM1FVPROC glUniform1fv;
+extern PFNGLUNIFORM2FVPROC glUniform2fv;
+extern PFNGLUNIFORM3FVPROC glUniform3fv;
+extern PFNGLUNIFORM4FVPROC glUniform4fv;
+extern PFNGLUNIFORM1IVPROC glUniform1iv;
+extern PFNGLUNIFORM2IVPROC glUniform2iv;
+extern PFNGLUNIFORM3IVPROC glUniform3iv;
+extern PFNGLUNIFORM4IVPROC glUniform4iv;
+extern PFNGLUNIFORMMATRIX2FVPROC glUniformMatrix2fv;
+extern PFNGLUNIFORMMATRIX3FVPROC glUniformMatrix3fv;
+extern PFNGLUNIFORMMATRIX4FVPROC glUniformMatrix4fv;
+extern PFNGLVALIDATEPROGRAMPROC glValidateProgram;
+extern PFNGLVERTEXATTRIB1DPROC glVertexAttrib1d;
+extern PFNGLVERTEXATTRIB1DVPROC glVertexAttrib1dv;
+extern PFNGLVERTEXATTRIB1FPROC glVertexAttrib1f;
+extern PFNGLVERTEXATTRIB1FVPROC glVertexAttrib1fv;
+extern PFNGLVERTEXATTRIB1SPROC glVertexAttrib1s;
+extern PFNGLVERTEXATTRIB1SVPROC glVertexAttrib1sv;
+extern PFNGLVERTEXATTRIB2DPROC glVertexAttrib2d;
+extern PFNGLVERTEXATTRIB2DVPROC glVertexAttrib2dv;
+extern PFNGLVERTEXATTRIB2FPROC glVertexAttrib2f;
+extern PFNGLVERTEXATTRIB2FVPROC glVertexAttrib2fv;
+extern PFNGLVERTEXATTRIB2SPROC glVertexAttrib2s;
+extern PFNGLVERTEXATTRIB2SVPROC glVertexAttrib2sv;
+extern PFNGLVERTEXATTRIB3DPROC glVertexAttrib3d;
+extern PFNGLVERTEXATTRIB3DVPROC glVertexAttrib3dv;
+extern PFNGLVERTEXATTRIB3FPROC glVertexAttrib3f;
+extern PFNGLVERTEXATTRIB3FVPROC glVertexAttrib3fv;
+extern PFNGLVERTEXATTRIB3SPROC glVertexAttrib3s;
+extern PFNGLVERTEXATTRIB3SVPROC glVertexAttrib3sv;
+extern PFNGLVERTEXATTRIB4NBVPROC glVertexAttrib4Nbv;
+extern PFNGLVERTEXATTRIB4NIVPROC glVertexAttrib4Niv;
+extern PFNGLVERTEXATTRIB4NSVPROC glVertexAttrib4Nsv;
+extern PFNGLVERTEXATTRIB4NUBPROC glVertexAttrib4Nub;
+extern PFNGLVERTEXATTRIB4NUBVPROC glVertexAttrib4Nubv;
+extern PFNGLVERTEXATTRIB4NUIVPROC glVertexAttrib4Nuiv;
+extern PFNGLVERTEXATTRIB4NUSVPROC glVertexAttrib4Nusv;
+extern PFNGLVERTEXATTRIB4BVPROC glVertexAttrib4bv;
+extern PFNGLVERTEXATTRIB4DPROC glVertexAttrib4d;
+extern PFNGLVERTEXATTRIB4DVPROC glVertexAttrib4dv;
+extern PFNGLVERTEXATTRIB4FPROC glVertexAttrib4f;
+extern PFNGLVERTEXATTRIB4FVPROC glVertexAttrib4fv;
+extern PFNGLVERTEXATTRIB4IVPROC glVertexAttrib4iv;
+extern PFNGLVERTEXATTRIB4SPROC glVertexAttrib4s;
+extern PFNGLVERTEXATTRIB4SVPROC glVertexAttrib4sv;
+extern PFNGLVERTEXATTRIB4UBVPROC glVertexAttrib4ubv;
+extern PFNGLVERTEXATTRIB4UIVPROC glVertexAttrib4uiv;
+extern PFNGLVERTEXATTRIB4USVPROC glVertexAttrib4usv;
+extern PFNGLVERTEXATTRIBPOINTERPROC glVertexAttribPointer;
+
+/* GL_ARB_multitexture */
+extern PFNGLACTIVETEXTUREARBPROC glActiveTextureARB;
+extern PFNGLCLIENTACTIVETEXTUREARBPROC glClientActiveTextureARB;
+extern PFNGLMULTITEXCOORD1DARBPROC glMultiTexCoord1dARB;
+extern PFNGLMULTITEXCOORD1DVARBPROC glMultiTexCoord1dvARB;
+extern PFNGLMULTITEXCOORD1FARBPROC glMultiTexCoord1fARB;
+extern PFNGLMULTITEXCOORD1FVARBPROC glMultiTexCoord1fvARB;
+extern PFNGLMULTITEXCOORD1IARBPROC glMultiTexCoord1iARB;
+extern PFNGLMULTITEXCOORD1IVARBPROC glMultiTexCoord1ivARB;
+extern PFNGLMULTITEXCOORD1SARBPROC glMultiTexCoord1sARB;
+extern PFNGLMULTITEXCOORD1SVARBPROC glMultiTexCoord1svARB;
+extern PFNGLMULTITEXCOORD2DARBPROC glMultiTexCoord2dARB;
+extern PFNGLMULTITEXCOORD2DVARBPROC glMultiTexCoord2dvARB;
+extern PFNGLMULTITEXCOORD2FARBPROC glMultiTexCoord2fARB;
+extern PFNGLMULTITEXCOORD2FVARBPROC glMultiTexCoord2fvARB;
+extern PFNGLMULTITEXCOORD2IARBPROC glMultiTexCoord2iARB;
+extern PFNGLMULTITEXCOORD2IVARBPROC glMultiTexCoord2ivARB;
+extern PFNGLMULTITEXCOORD2SARBPROC glMultiTexCoord2sARB;
+extern PFNGLMULTITEXCOORD2SVARBPROC glMultiTexCoord2svARB;
+extern PFNGLMULTITEXCOORD3DARBPROC glMultiTexCoord3dARB;
+extern PFNGLMULTITEXCOORD3DVARBPROC glMultiTexCoord3dvARB;
+extern PFNGLMULTITEXCOORD3FARBPROC glMultiTexCoord3fARB;
+extern PFNGLMULTITEXCOORD3FVARBPROC glMultiTexCoord3fvARB;
+extern PFNGLMULTITEXCOORD3IARBPROC glMultiTexCoord3iARB;
+extern PFNGLMULTITEXCOORD3IVARBPROC glMultiTexCoord3ivARB;
+extern PFNGLMULTITEXCOORD3SARBPROC glMultiTexCoord3sARB;
+extern PFNGLMULTITEXCOORD3SVARBPROC glMultiTexCoord3svARB;
+extern PFNGLMULTITEXCOORD4DARBPROC glMultiTexCoord4dARB;
+extern PFNGLMULTITEXCOORD4DVARBPROC glMultiTexCoord4dvARB;
+extern PFNGLMULTITEXCOORD4FARBPROC glMultiTexCoord4fARB;
+extern PFNGLMULTITEXCOORD4FVARBPROC glMultiTexCoord4fvARB;
+extern PFNGLMULTITEXCOORD4IARBPROC glMultiTexCoord4iARB;
+extern PFNGLMULTITEXCOORD4IVARBPROC glMultiTexCoord4ivARB;
+extern PFNGLMULTITEXCOORD4SARBPROC glMultiTexCoord4sARB;
+extern PFNGLMULTITEXCOORD4SVARBPROC glMultiTexCoord4svARB;
+
+/* GL_ARB_transpose_matrix */
+extern PFNGLLOADTRANSPOSEMATRIXFARBPROC glLoadTransposeMatrixfARB;
+extern PFNGLLOADTRANSPOSEMATRIXDARBPROC glLoadTransposeMatrixdARB;
+extern PFNGLMULTTRANSPOSEMATRIXFARBPROC glMultTransposeMatrixfARB;
+extern PFNGLMULTTRANSPOSEMATRIXDARBPROC glMultTransposeMatrixdARB;
+
+/* GL_ARB_multisample */
+extern PFNGLSAMPLECOVERAGEARBPROC glSampleCoverageARB;
+
+/* GL_ARB_texture_env_add */
+
+/* GL_ARB_texture_cube_map */
+
+/* GL_ARB_texture_compression */
+extern PFNGLCOMPRESSEDTEXIMAGE3DARBPROC glCompressedTexImage3DARB;
+extern PFNGLCOMPRESSEDTEXIMAGE2DARBPROC glCompressedTexImage2DARB;
+extern PFNGLCOMPRESSEDTEXIMAGE1DARBPROC glCompressedTexImage1DARB;
+extern PFNGLCOMPRESSEDTEXSUBIMAGE3DARBPROC glCompressedTexSubImage3DARB;
+extern PFNGLCOMPRESSEDTEXSUBIMAGE2DARBPROC glCompressedTexSubImage2DARB;
+extern PFNGLCOMPRESSEDTEXSUBIMAGE1DARBPROC glCompressedTexSubImage1DARB;
+extern PFNGLGETCOMPRESSEDTEXIMAGEARBPROC glGetCompressedTexImageARB;
+
+/* GL_ARB_texture_border_clamp */
+
+/* GL_ARB_point_parameters */
+extern PFNGLPOINTPARAMETERFARBPROC glPointParameterfARB;
+extern PFNGLPOINTPARAMETERFVARBPROC glPointParameterfvARB;
+
+/* GL_ARB_vertex_blend */
+extern PFNGLWEIGHTBVARBPROC glWeightbvARB;
+extern PFNGLWEIGHTSVARBPROC glWeightsvARB;
+extern PFNGLWEIGHTIVARBPROC glWeightivARB;
+extern PFNGLWEIGHTFVARBPROC glWeightfvARB;
+extern PFNGLWEIGHTDVARBPROC glWeightdvARB;
+extern PFNGLWEIGHTUBVARBPROC glWeightubvARB;
+extern PFNGLWEIGHTUSVARBPROC glWeightusvARB;
+extern PFNGLWEIGHTUIVARBPROC glWeightuivARB;
+extern PFNGLWEIGHTPOINTERARBPROC glWeightPointerARB;
+extern PFNGLVERTEXBLENDARBPROC glVertexBlendARB;
+
+/* GL_ARB_matrix_palette */
+extern PFNGLCURRENTPALETTEMATRIXARBPROC glCurrentPaletteMatrixARB;
+extern PFNGLMATRIXINDEXUBVARBPROC glMatrixIndexubvARB;
+extern PFNGLMATRIXINDEXUSVARBPROC glMatrixIndexusvARB;
+extern PFNGLMATRIXINDEXUIVARBPROC glMatrixIndexuivARB;
+extern PFNGLMATRIXINDEXPOINTERARBPROC glMatrixIndexPointerARB;
+
+/* GL_ARB_texture_env_combine */
+
+/* GL_ARB_texture_env_crossbar */
+
+/* GL_ARB_texture_env_dot3 */
+
+/* GL_ARB_texture_mirrored_repeat */
+
+/* GL_ARB_depth_texture */
+
+/* GL_ARB_shadow */
+
+/* GL_ARB_shadow_ambient */
+
+/* GL_ARB_window_pos */
+extern PFNGLWINDOWPOS2DARBPROC glWindowPos2dARB;
+extern PFNGLWINDOWPOS2DVARBPROC glWindowPos2dvARB;
+extern PFNGLWINDOWPOS2FARBPROC glWindowPos2fARB;
+extern PFNGLWINDOWPOS2FVARBPROC glWindowPos2fvARB;
+extern PFNGLWINDOWPOS2IARBPROC glWindowPos2iARB;
+extern PFNGLWINDOWPOS2IVARBPROC glWindowPos2ivARB;
+extern PFNGLWINDOWPOS2SARBPROC glWindowPos2sARB;
+extern PFNGLWINDOWPOS2SVARBPROC glWindowPos2svARB;
+extern PFNGLWINDOWPOS3DARBPROC glWindowPos3dARB;
+extern PFNGLWINDOWPOS3DVARBPROC glWindowPos3dvARB;
+extern PFNGLWINDOWPOS3FARBPROC glWindowPos3fARB;
+extern PFNGLWINDOWPOS3FVARBPROC glWindowPos3fvARB;
+extern PFNGLWINDOWPOS3IARBPROC glWindowPos3iARB;
+extern PFNGLWINDOWPOS3IVARBPROC glWindowPos3ivARB;
+extern PFNGLWINDOWPOS3SARBPROC glWindowPos3sARB;
+extern PFNGLWINDOWPOS3SVARBPROC glWindowPos3svARB;
+
+/* GL_ARB_vertex_program */
+extern PFNGLVERTEXATTRIB1DARBPROC glVertexAttrib1dARB;
+extern PFNGLVERTEXATTRIB1DVARBPROC glVertexAttrib1dvARB;
+extern PFNGLVERTEXATTRIB1FARBPROC glVertexAttrib1fARB;
+extern PFNGLVERTEXATTRIB1FVARBPROC glVertexAttrib1fvARB;
+extern PFNGLVERTEXATTRIB1SARBPROC glVertexAttrib1sARB;
+extern PFNGLVERTEXATTRIB1SVARBPROC glVertexAttrib1svARB;
+extern PFNGLVERTEXATTRIB2DARBPROC glVertexAttrib2dARB;
+extern PFNGLVERTEXATTRIB2DVARBPROC glVertexAttrib2dvARB;
+extern PFNGLVERTEXATTRIB2FARBPROC glVertexAttrib2fARB;
+extern PFNGLVERTEXATTRIB2FVARBPROC glVertexAttrib2fvARB;
+extern PFNGLVERTEXATTRIB2SARBPROC glVertexAttrib2sARB;
+extern PFNGLVERTEXATTRIB2SVARBPROC glVertexAttrib2svARB;
+extern PFNGLVERTEXATTRIB3DARBPROC glVertexAttrib3dARB;
+extern PFNGLVERTEXATTRIB3DVARBPROC glVertexAttrib3dvARB;
+extern PFNGLVERTEXATTRIB3FARBPROC glVertexAttrib3fARB;
+extern PFNGLVERTEXATTRIB3FVARBPROC glVertexAttrib3fvARB;
+extern PFNGLVERTEXATTRIB3SARBPROC glVertexAttrib3sARB;
+extern PFNGLVERTEXATTRIB3SVARBPROC glVertexAttrib3svARB;
+extern PFNGLVERTEXATTRIB4NBVARBPROC glVertexAttrib4NbvARB;
+extern PFNGLVERTEXATTRIB4NIVARBPROC glVertexAttrib4NivARB;
+extern PFNGLVERTEXATTRIB4NSVARBPROC glVertexAttrib4NsvARB;
+extern PFNGLVERTEXATTRIB4NUBARBPROC glVertexAttrib4NubARB;
+extern PFNGLVERTEXATTRIB4NUBVARBPROC glVertexAttrib4NubvARB;
+extern PFNGLVERTEXATTRIB4NUIVARBPROC glVertexAttrib4NuivARB;
+extern PFNGLVERTEXATTRIB4NUSVARBPROC glVertexAttrib4NusvARB;
+extern PFNGLVERTEXATTRIB4BVARBPROC glVertexAttrib4bvARB;
+extern PFNGLVERTEXATTRIB4DARBPROC glVertexAttrib4dARB;
+extern PFNGLVERTEXATTRIB4DVARBPROC glVertexAttrib4dvARB;
+extern PFNGLVERTEXATTRIB4FARBPROC glVertexAttrib4fARB;
+extern PFNGLVERTEXATTRIB4FVARBPROC glVertexAttrib4fvARB;
+extern PFNGLVERTEXATTRIB4IVARBPROC glVertexAttrib4ivARB;
+extern PFNGLVERTEXATTRIB4SARBPROC glVertexAttrib4sARB;
+extern PFNGLVERTEXATTRIB4SVARBPROC glVertexAttrib4svARB;
+extern PFNGLVERTEXATTRIB4UBVARBPROC glVertexAttrib4ubvARB;
+extern PFNGLVERTEXATTRIB4UIVARBPROC glVertexAttrib4uivARB;
+extern PFNGLVERTEXATTRIB4USVARBPROC glVertexAttrib4usvARB;
+extern PFNGLVERTEXATTRIBPOINTERARBPROC glVertexAttribPointerARB;
+extern PFNGLENABLEVERTEXATTRIBARRAYARBPROC glEnableVertexAttribArrayARB;
+extern PFNGLDISABLEVERTEXATTRIBARRAYARBPROC glDisableVertexAttribArrayARB;
+extern PFNGLPROGRAMSTRINGARBPROC glProgramStringARB;
+extern PFNGLBINDPROGRAMARBPROC glBindProgramARB;
+extern PFNGLDELETEPROGRAMSARBPROC glDeleteProgramsARB;
+extern PFNGLGENPROGRAMSARBPROC glGenProgramsARB;
+extern PFNGLPROGRAMENVPARAMETER4DARBPROC glProgramEnvParameter4dARB;
+extern PFNGLPROGRAMENVPARAMETER4DVARBPROC glProgramEnvParameter4dvARB;
+extern PFNGLPROGRAMENVPARAMETER4FARBPROC glProgramEnvParameter4fARB;
+extern PFNGLPROGRAMENVPARAMETER4FVARBPROC glProgramEnvParameter4fvARB;
+extern PFNGLPROGRAMLOCALPARAMETER4DARBPROC glProgramLocalParameter4dARB;
+extern PFNGLPROGRAMLOCALPARAMETER4DVARBPROC glProgramLocalParameter4dvARB;
+extern PFNGLPROGRAMLOCALPARAMETER4FARBPROC glProgramLocalParameter4fARB;
+extern PFNGLPROGRAMLOCALPARAMETER4FVARBPROC glProgramLocalParameter4fvARB;
+extern PFNGLGETPROGRAMENVPARAMETERDVARBPROC glGetProgramEnvParameterdvARB;
+extern PFNGLGETPROGRAMENVPARAMETERFVARBPROC glGetProgramEnvParameterfvARB;
+extern PFNGLGETPROGRAMLOCALPARAMETERDVARBPROC glGetProgramLocalParameterdvARB;
+extern PFNGLGETPROGRAMLOCALPARAMETERFVARBPROC glGetProgramLocalParameterfvARB;
+extern PFNGLGETPROGRAMIVARBPROC glGetProgramivARB;
+extern PFNGLGETPROGRAMSTRINGARBPROC glGetProgramStringARB;
+extern PFNGLGETVERTEXATTRIBDVARBPROC glGetVertexAttribdvARB;
+extern PFNGLGETVERTEXATTRIBFVARBPROC glGetVertexAttribfvARB;
+extern PFNGLGETVERTEXATTRIBIVARBPROC glGetVertexAttribivARB;
+extern PFNGLGETVERTEXATTRIBPOINTERVARBPROC glGetVertexAttribPointervARB;
+extern PFNGLISPROGRAMARBPROC glIsProgramARB;
+
+/* GL_ARB_fragment_program */
+
+/* GL_ARB_vertex_buffer_object */
+extern PFNGLBINDBUFFERARBPROC glBindBufferARB;
+extern PFNGLDELETEBUFFERSARBPROC glDeleteBuffersARB;
+extern PFNGLGENBUFFERSARBPROC glGenBuffersARB;
+extern PFNGLISBUFFERARBPROC glIsBufferARB;
+extern PFNGLBUFFERDATAARBPROC glBufferDataARB;
+extern PFNGLBUFFERSUBDATAARBPROC glBufferSubDataARB;
+extern PFNGLGETBUFFERSUBDATAARBPROC glGetBufferSubDataARB;
+extern PFNGLMAPBUFFERARBPROC glMapBufferARB;
+extern PFNGLUNMAPBUFFERARBPROC glUnmapBufferARB;
+extern PFNGLGETBUFFERPARAMETERIVARBPROC glGetBufferParameterivARB;
+extern PFNGLGETBUFFERPOINTERVARBPROC glGetBufferPointervARB;
+
+/* GL_ARB_occlusion_query */
+extern PFNGLGENQUERIESARBPROC glGenQueriesARB;
+extern PFNGLDELETEQUERIESARBPROC glDeleteQueriesARB;
+extern PFNGLISQUERYARBPROC glIsQueryARB;
+extern PFNGLBEGINQUERYARBPROC glBeginQueryARB;
+extern PFNGLENDQUERYARBPROC glEndQueryARB;
+extern PFNGLGETQUERYIVARBPROC glGetQueryivARB;
+extern PFNGLGETQUERYOBJECTIVARBPROC glGetQueryObjectivARB;
+extern PFNGLGETQUERYOBJECTUIVARBPROC glGetQueryObjectuivARB;
+
+/* GL_ARB_shader_objects */
+extern PFNGLDELETEOBJECTARBPROC glDeleteObjectARB;
+extern PFNGLGETHANDLEARBPROC glGetHandleARB;
+extern PFNGLDETACHOBJECTARBPROC glDetachObjectARB;
+extern PFNGLCREATESHADEROBJECTARBPROC glCreateShaderObjectARB;
+extern PFNGLSHADERSOURCEARBPROC glShaderSourceARB;
+extern PFNGLCOMPILESHADERARBPROC glCompileShaderARB;
+extern PFNGLCREATEPROGRAMOBJECTARBPROC glCreateProgramObjectARB;
+extern PFNGLATTACHOBJECTARBPROC glAttachObjectARB;
+extern PFNGLLINKPROGRAMARBPROC glLinkProgramARB;
+extern PFNGLUSEPROGRAMOBJECTARBPROC glUseProgramObjectARB;
+extern PFNGLVALIDATEPROGRAMARBPROC glValidateProgramARB;
+extern PFNGLUNIFORM1FARBPROC glUniform1fARB;
+extern PFNGLUNIFORM2FARBPROC glUniform2fARB;
+extern PFNGLUNIFORM3FARBPROC glUniform3fARB;
+extern PFNGLUNIFORM4FARBPROC glUniform4fARB;
+extern PFNGLUNIFORM1IARBPROC glUniform1iARB;
+extern PFNGLUNIFORM2IARBPROC glUniform2iARB;
+extern PFNGLUNIFORM3IARBPROC glUniform3iARB;
+extern PFNGLUNIFORM4IARBPROC glUniform4iARB;
+extern PFNGLUNIFORM1FVARBPROC glUniform1fvARB;
+extern PFNGLUNIFORM2FVARBPROC glUniform2fvARB;
+extern PFNGLUNIFORM3FVARBPROC glUniform3fvARB;
+extern PFNGLUNIFORM4FVARBPROC glUniform4fvARB;
+extern PFNGLUNIFORM1IVARBPROC glUniform1ivARB;
+extern PFNGLUNIFORM2IVARBPROC glUniform2ivARB;
+extern PFNGLUNIFORM3IVARBPROC glUniform3ivARB;
+extern PFNGLUNIFORM4IVARBPROC glUniform4ivARB;
+extern PFNGLUNIFORMMATRIX2FVARBPROC glUniformMatrix2fvARB;
+extern PFNGLUNIFORMMATRIX3FVARBPROC glUniformMatrix3fvARB;
+extern PFNGLUNIFORMMATRIX4FVARBPROC glUniformMatrix4fvARB;
+extern PFNGLGETOBJECTPARAMETERFVARBPROC glGetObjectParameterfvARB;
+extern PFNGLGETOBJECTPARAMETERIVARBPROC glGetObjectParameterivARB;
+extern PFNGLGETINFOLOGARBPROC glGetInfoLogARB;
+extern PFNGLGETATTACHEDOBJECTSARBPROC glGetAttachedObjectsARB;
+extern PFNGLGETUNIFORMLOCATIONARBPROC glGetUniformLocationARB;
+extern PFNGLGETACTIVEUNIFORMARBPROC glGetActiveUniformARB;
+extern PFNGLGETUNIFORMFVARBPROC glGetUniformfvARB;
+extern PFNGLGETUNIFORMIVARBPROC glGetUniformivARB;
+extern PFNGLGETSHADERSOURCEARBPROC glGetShaderSourceARB;
+
+/* GL_ARB_vertex_shader */
+extern PFNGLBINDATTRIBLOCATIONARBPROC glBindAttribLocationARB;
+extern PFNGLGETACTIVEATTRIBARBPROC glGetActiveAttribARB;
+extern PFNGLGETATTRIBLOCATIONARBPROC glGetAttribLocationARB;
+
+/* GL_ARB_fragment_shader */
+
+/* GL_ARB_shading_language_100 */
+
+/* GL_ARB_texture_non_power_of_two */
+
+/* GL_ARB_point_sprite */
+
+/* GL_ARB_fragment_program_shadow */
+
+/* GL_ARB_draw_buffers */
+extern PFNGLDRAWBUFFERSARBPROC glDrawBuffersARB;
+
+/* GL_ARB_texture_rectangle */
+
+/* GL_ARB_color_buffer_float */
+extern PFNGLCLAMPCOLORARBPROC glClampColorARB;
+
+/* GL_ARB_half_float_pixel */
+
+/* GL_ARB_texture_float */
+
+/* GL_ARB_pixel_buffer_object */
+
+/* GL_EXT_abgr */
+
+/* GL_EXT_blend_color */
+extern PFNGLBLENDCOLOREXTPROC glBlendColorEXT;
+
+/* GL_EXT_polygon_offset */
+extern PFNGLPOLYGONOFFSETEXTPROC glPolygonOffsetEXT;
+
+/* GL_EXT_texture */
+
+/* GL_EXT_texture3D */
+extern PFNGLTEXIMAGE3DEXTPROC glTexImage3DEXT;
+extern PFNGLTEXSUBIMAGE3DEXTPROC glTexSubImage3DEXT;
+
+/* GL_SGIS_texture_filter4 */
+extern PFNGLGETTEXFILTERFUNCSGISPROC glGetTexFilterFuncSGIS;
+extern PFNGLTEXFILTERFUNCSGISPROC glTexFilterFuncSGIS;
+
+/* GL_EXT_subtexture */
+extern PFNGLTEXSUBIMAGE1DEXTPROC glTexSubImage1DEXT;
+extern PFNGLTEXSUBIMAGE2DEXTPROC glTexSubImage2DEXT;
+
+/* GL_EXT_copy_texture */
+extern PFNGLCOPYTEXIMAGE1DEXTPROC glCopyTexImage1DEXT;
+extern PFNGLCOPYTEXIMAGE2DEXTPROC glCopyTexImage2DEXT;
+extern PFNGLCOPYTEXSUBIMAGE1DEXTPROC glCopyTexSubImage1DEXT;
+extern PFNGLCOPYTEXSUBIMAGE2DEXTPROC glCopyTexSubImage2DEXT;
+extern PFNGLCOPYTEXSUBIMAGE3DEXTPROC glCopyTexSubImage3DEXT;
+
+/* GL_EXT_histogram */
+extern PFNGLGETHISTOGRAMEXTPROC glGetHistogramEXT;
+extern PFNGLGETHISTOGRAMPARAMETERFVEXTPROC glGetHistogramParameterfvEXT;
+extern PFNGLGETHISTOGRAMPARAMETERIVEXTPROC glGetHistogramParameterivEXT;
+extern PFNGLGETMINMAXEXTPROC glGetMinmaxEXT;
+extern PFNGLGETMINMAXPARAMETERFVEXTPROC glGetMinmaxParameterfvEXT;
+extern PFNGLGETMINMAXPARAMETERIVEXTPROC glGetMinmaxParameterivEXT;
+extern PFNGLHISTOGRAMEXTPROC glHistogramEXT;
+extern PFNGLMINMAXEXTPROC glMinmaxEXT;
+extern PFNGLRESETHISTOGRAMEXTPROC glResetHistogramEXT;
+extern PFNGLRESETMINMAXEXTPROC glResetMinmaxEXT;
+
+/* GL_EXT_convolution */
+extern PFNGLCONVOLUTIONFILTER1DEXTPROC glConvolutionFilter1DEXT;
+extern PFNGLCONVOLUTIONFILTER2DEXTPROC glConvolutionFilter2DEXT;
+extern PFNGLCONVOLUTIONPARAMETERFEXTPROC glConvolutionParameterfEXT;
+extern PFNGLCONVOLUTIONPARAMETERFVEXTPROC glConvolutionParameterfvEXT;
+extern PFNGLCONVOLUTIONPARAMETERIEXTPROC glConvolutionParameteriEXT;
+extern PFNGLCONVOLUTIONPARAMETERIVEXTPROC glConvolutionParameterivEXT;
+extern PFNGLCOPYCONVOLUTIONFILTER1DEXTPROC glCopyConvolutionFilter1DEXT;
+extern PFNGLCOPYCONVOLUTIONFILTER2DEXTPROC glCopyConvolutionFilter2DEXT;
+extern PFNGLGETCONVOLUTIONFILTEREXTPROC glGetConvolutionFilterEXT;
+extern PFNGLGETCONVOLUTIONPARAMETERFVEXTPROC glGetConvolutionParameterfvEXT;
+extern PFNGLGETCONVOLUTIONPARAMETERIVEXTPROC glGetConvolutionParameterivEXT;
+extern PFNGLGETSEPARABLEFILTEREXTPROC glGetSeparableFilterEXT;
+extern PFNGLSEPARABLEFILTER2DEXTPROC glSeparableFilter2DEXT;
+
+/* GL_EXT_color_matrix */
+
+/* GL_SGI_color_table */
+extern PFNGLCOLORTABLESGIPROC glColorTableSGI;
+extern PFNGLCOLORTABLEPARAMETERFVSGIPROC glColorTableParameterfvSGI;
+extern PFNGLCOLORTABLEPARAMETERIVSGIPROC glColorTableParameterivSGI;
+extern PFNGLCOPYCOLORTABLESGIPROC glCopyColorTableSGI;
+extern PFNGLGETCOLORTABLESGIPROC glGetColorTableSGI;
+extern PFNGLGETCOLORTABLEPARAMETERFVSGIPROC glGetColorTableParameterfvSGI;
+extern PFNGLGETCOLORTABLEPARAMETERIVSGIPROC glGetColorTableParameterivSGI;
+
+/* GL_SGIX_pixel_texture */
+extern PFNGLPIXELTEXGENSGIXPROC glPixelTexGenSGIX;
+
+/* GL_SGIS_pixel_texture */
+extern PFNGLPIXELTEXGENPARAMETERISGISPROC glPixelTexGenParameteriSGIS;
+extern PFNGLPIXELTEXGENPARAMETERIVSGISPROC glPixelTexGenParameterivSGIS;
+extern PFNGLPIXELTEXGENPARAMETERFSGISPROC glPixelTexGenParameterfSGIS;
+extern PFNGLPIXELTEXGENPARAMETERFVSGISPROC glPixelTexGenParameterfvSGIS;
+extern PFNGLGETPIXELTEXGENPARAMETERIVSGISPROC glGetPixelTexGenParameterivSGIS;
+extern PFNGLGETPIXELTEXGENPARAMETERFVSGISPROC glGetPixelTexGenParameterfvSGIS;
+
+/* GL_SGIS_texture4D */
+extern PFNGLTEXIMAGE4DSGISPROC glTexImage4DSGIS;
+extern PFNGLTEXSUBIMAGE4DSGISPROC glTexSubImage4DSGIS;
+
+/* GL_SGI_texture_color_table */
+
+/* GL_EXT_cmyka */
+
+/* GL_EXT_texture_object */
+extern PFNGLARETEXTURESRESIDENTEXTPROC glAreTexturesResidentEXT;
+extern PFNGLBINDTEXTUREEXTPROC glBindTextureEXT;
+extern PFNGLDELETETEXTURESEXTPROC glDeleteTexturesEXT;
+extern PFNGLGENTEXTURESEXTPROC glGenTexturesEXT;
+extern PFNGLISTEXTUREEXTPROC glIsTextureEXT;
+extern PFNGLPRIORITIZETEXTURESEXTPROC glPrioritizeTexturesEXT;
+
+/* GL_SGIS_detail_texture */
+extern PFNGLDETAILTEXFUNCSGISPROC glDetailTexFuncSGIS;
+extern PFNGLGETDETAILTEXFUNCSGISPROC glGetDetailTexFuncSGIS;
+
+/* GL_SGIS_sharpen_texture */
+extern PFNGLSHARPENTEXFUNCSGISPROC glSharpenTexFuncSGIS;
+extern PFNGLGETSHARPENTEXFUNCSGISPROC glGetSharpenTexFuncSGIS;
+
+/* GL_EXT_packed_pixels */
+
+/* GL_SGIS_texture_lod */
+
+/* GL_SGIS_multisample */
+extern PFNGLSAMPLEMASKSGISPROC glSampleMaskSGIS;
+extern PFNGLSAMPLEPATTERNSGISPROC glSamplePatternSGIS;
+
+/* GL_EXT_rescale_normal */
+
+/* GL_EXT_vertex_array */
+extern PFNGLARRAYELEMENTEXTPROC glArrayElementEXT;
+extern PFNGLCOLORPOINTEREXTPROC glColorPointerEXT;
+extern PFNGLDRAWARRAYSEXTPROC glDrawArraysEXT;
+extern PFNGLEDGEFLAGPOINTEREXTPROC glEdgeFlagPointerEXT;
+extern PFNGLGETPOINTERVEXTPROC glGetPointervEXT;
+extern PFNGLINDEXPOINTEREXTPROC glIndexPointerEXT;
+extern PFNGLNORMALPOINTEREXTPROC glNormalPointerEXT;
+extern PFNGLTEXCOORDPOINTEREXTPROC glTexCoordPointerEXT;
+extern PFNGLVERTEXPOINTEREXTPROC glVertexPointerEXT;
+
+/* GL_EXT_misc_attribute */
+
+/* GL_SGIS_generate_mipmap */
+
+/* GL_SGIX_clipmap */
+
+/* GL_SGIX_shadow */
+
+/* GL_SGIS_texture_edge_clamp */
+
+/* GL_SGIS_texture_border_clamp */
+
+/* GL_EXT_blend_minmax */
+extern PFNGLBLENDEQUATIONEXTPROC glBlendEquationEXT;
+
+/* GL_EXT_blend_subtract */
+
+/* GL_EXT_blend_logic_op */
+
+/* GL_SGIX_interlace */
+
+/* GL_SGIX_pixel_tiles */
+
+/* GL_SGIX_texture_select */
+
+/* GL_SGIX_sprite */
+extern PFNGLSPRITEPARAMETERFSGIXPROC glSpriteParameterfSGIX;
+extern PFNGLSPRITEPARAMETERFVSGIXPROC glSpriteParameterfvSGIX;
+extern PFNGLSPRITEPARAMETERISGIXPROC glSpriteParameteriSGIX;
+extern PFNGLSPRITEPARAMETERIVSGIXPROC glSpriteParameterivSGIX;
+
+/* GL_SGIX_texture_multi_buffer */
+
+/* GL_EXT_point_parameters */
+extern PFNGLPOINTPARAMETERFEXTPROC glPointParameterfEXT;
+extern PFNGLPOINTPARAMETERFVEXTPROC glPointParameterfvEXT;
+
+/* GL_SGIS_point_parameters */
+extern PFNGLPOINTPARAMETERFSGISPROC glPointParameterfSGIS;
+extern PFNGLPOINTPARAMETERFVSGISPROC glPointParameterfvSGIS;
+
+/* GL_SGIX_instruments */
+extern PFNGLGETINSTRUMENTSSGIXPROC glGetInstrumentsSGIX;
+extern PFNGLINSTRUMENTSBUFFERSGIXPROC glInstrumentsBufferSGIX;
+extern PFNGLPOLLINSTRUMENTSSGIXPROC glPollInstrumentsSGIX;
+extern PFNGLREADINSTRUMENTSSGIXPROC glReadInstrumentsSGIX;
+extern PFNGLSTARTINSTRUMENTSSGIXPROC glStartInstrumentsSGIX;
+extern PFNGLSTOPINSTRUMENTSSGIXPROC glStopInstrumentsSGIX;
+
+/* GL_SGIX_texture_scale_bias */
+
+/* GL_SGIX_framezoom */
+extern PFNGLFRAMEZOOMSGIXPROC glFrameZoomSGIX;
+
+/* GL_SGIX_tag_sample_buffer */
+extern PFNGLTAGSAMPLEBUFFERSGIXPROC glTagSampleBufferSGIX;
+
+/* GL_SGIX_polynomial_ffd */
+extern PFNGLDEFORMATIONMAP3DSGIXPROC glDeformationMap3dSGIX;
+extern PFNGLDEFORMATIONMAP3FSGIXPROC glDeformationMap3fSGIX;
+extern PFNGLDEFORMSGIXPROC glDeformSGIX;
+extern PFNGLLOADIDENTITYDEFORMATIONMAPSGIXPROC glLoadIdentityDeformationMapSGIX;
+
+/* GL_SGIX_reference_plane */
+extern PFNGLREFERENCEPLANESGIXPROC glReferencePlaneSGIX;
+
+/* GL_SGIX_flush_raster */
+extern PFNGLFLUSHRASTERSGIXPROC glFlushRasterSGIX;
+
+/* GL_SGIX_depth_texture */
+
+/* GL_SGIS_fog_function */
+extern PFNGLFOGFUNCSGISPROC glFogFuncSGIS;
+extern PFNGLGETFOGFUNCSGISPROC glGetFogFuncSGIS;
+
+/* GL_SGIX_fog_offset */
+
+/* GL_HP_image_transform */
+extern PFNGLIMAGETRANSFORMPARAMETERIHPPROC glImageTransformParameteriHP;
+extern PFNGLIMAGETRANSFORMPARAMETERFHPPROC glImageTransformParameterfHP;
+extern PFNGLIMAGETRANSFORMPARAMETERIVHPPROC glImageTransformParameterivHP;
+extern PFNGLIMAGETRANSFORMPARAMETERFVHPPROC glImageTransformParameterfvHP;
+extern PFNGLGETIMAGETRANSFORMPARAMETERIVHPPROC glGetImageTransformParameterivHP;
+extern PFNGLGETIMAGETRANSFORMPARAMETERFVHPPROC glGetImageTransformParameterfvHP;
+
+/* GL_HP_convolution_border_modes */
+
+/* GL_SGIX_texture_add_env */
+
+/* GL_EXT_color_subtable */
+extern PFNGLCOLORSUBTABLEEXTPROC glColorSubTableEXT;
+extern PFNGLCOPYCOLORSUBTABLEEXTPROC glCopyColorSubTableEXT;
+
+/* GL_PGI_vertex_hints */
+
+/* GL_PGI_misc_hints */
+extern PFNGLHINTPGIPROC glHintPGI;
+
+/* GL_EXT_paletted_texture */
+extern PFNGLCOLORTABLEEXTPROC glColorTableEXT;
+extern PFNGLGETCOLORTABLEEXTPROC glGetColorTableEXT;
+extern PFNGLGETCOLORTABLEPARAMETERIVEXTPROC glGetColorTableParameterivEXT;
+extern PFNGLGETCOLORTABLEPARAMETERFVEXTPROC glGetColorTableParameterfvEXT;
+
+/* GL_EXT_clip_volume_hint */
+
+/* GL_SGIX_list_priority */
+extern PFNGLGETLISTPARAMETERFVSGIXPROC glGetListParameterfvSGIX;
+extern PFNGLGETLISTPARAMETERIVSGIXPROC glGetListParameterivSGIX;
+extern PFNGLLISTPARAMETERFSGIXPROC glListParameterfSGIX;
+extern PFNGLLISTPARAMETERFVSGIXPROC glListParameterfvSGIX;
+extern PFNGLLISTPARAMETERISGIXPROC glListParameteriSGIX;
+extern PFNGLLISTPARAMETERIVSGIXPROC glListParameterivSGIX;
+
+/* GL_SGIX_ir_instrument1 */
+
+/* GL_SGIX_calligraphic_fragment */
+
+/* GL_SGIX_texture_lod_bias */
+
+/* GL_SGIX_shadow_ambient */
+
+/* GL_EXT_index_texture */
+
+/* GL_EXT_index_material */
+extern PFNGLINDEXMATERIALEXTPROC glIndexMaterialEXT;
+
+/* GL_EXT_index_func */
+extern PFNGLINDEXFUNCEXTPROC glIndexFuncEXT;
+
+/* GL_EXT_index_array_formats */
+
+/* GL_EXT_compiled_vertex_array */
+extern PFNGLLOCKARRAYSEXTPROC glLockArraysEXT;
+extern PFNGLUNLOCKARRAYSEXTPROC glUnlockArraysEXT;
+
+/* GL_EXT_cull_vertex */
+extern PFNGLCULLPARAMETERDVEXTPROC glCullParameterdvEXT;
+extern PFNGLCULLPARAMETERFVEXTPROC glCullParameterfvEXT;
+
+/* GL_SGIX_ycrcb */
+
+/* GL_SGIX_fragment_lighting */
+extern PFNGLFRAGMENTCOLORMATERIALSGIXPROC glFragmentColorMaterialSGIX;
+extern PFNGLFRAGMENTLIGHTFSGIXPROC glFragmentLightfSGIX;
+extern PFNGLFRAGMENTLIGHTFVSGIXPROC glFragmentLightfvSGIX;
+extern PFNGLFRAGMENTLIGHTISGIXPROC glFragmentLightiSGIX;
+extern PFNGLFRAGMENTLIGHTIVSGIXPROC glFragmentLightivSGIX;
+extern PFNGLFRAGMENTLIGHTMODELFSGIXPROC glFragmentLightModelfSGIX;
+extern PFNGLFRAGMENTLIGHTMODELFVSGIXPROC glFragmentLightModelfvSGIX;
+extern PFNGLFRAGMENTLIGHTMODELISGIXPROC glFragmentLightModeliSGIX;
+extern PFNGLFRAGMENTLIGHTMODELIVSGIXPROC glFragmentLightModelivSGIX;
+extern PFNGLFRAGMENTMATERIALFSGIXPROC glFragmentMaterialfSGIX;
+extern PFNGLFRAGMENTMATERIALFVSGIXPROC glFragmentMaterialfvSGIX;
+extern PFNGLFRAGMENTMATERIALISGIXPROC glFragmentMaterialiSGIX;
+extern PFNGLFRAGMENTMATERIALIVSGIXPROC glFragmentMaterialivSGIX;
+extern PFNGLGETFRAGMENTLIGHTFVSGIXPROC glGetFragmentLightfvSGIX;
+extern PFNGLGETFRAGMENTLIGHTIVSGIXPROC glGetFragmentLightivSGIX;
+extern PFNGLGETFRAGMENTMATERIALFVSGIXPROC glGetFragmentMaterialfvSGIX;
+extern PFNGLGETFRAGMENTMATERIALIVSGIXPROC glGetFragmentMaterialivSGIX;
+extern PFNGLLIGHTENVISGIXPROC glLightEnviSGIX;
+
+/* GL_IBM_rasterpos_clip */
+
+/* GL_HP_texture_lighting */
+
+/* GL_EXT_draw_range_elements */
+extern PFNGLDRAWRANGEELEMENTSEXTPROC glDrawRangeElementsEXT;
+
+/* GL_WIN_phong_shading */
+
+/* GL_WIN_specular_fog */
+
+/* GL_EXT_light_texture */
+extern PFNGLAPPLYTEXTUREEXTPROC glApplyTextureEXT;
+extern PFNGLTEXTURELIGHTEXTPROC glTextureLightEXT;
+extern PFNGLTEXTUREMATERIALEXTPROC glTextureMaterialEXT;
+
+/* GL_SGIX_blend_alpha_minmax */
+
+/* GL_EXT_bgra */
+
+/* GL_SGIX_async */
+extern PFNGLASYNCMARKERSGIXPROC glAsyncMarkerSGIX;
+extern PFNGLFINISHASYNCSGIXPROC glFinishAsyncSGIX;
+extern PFNGLPOLLASYNCSGIXPROC glPollAsyncSGIX;
+extern PFNGLGENASYNCMARKERSSGIXPROC glGenAsyncMarkersSGIX;
+extern PFNGLDELETEASYNCMARKERSSGIXPROC glDeleteAsyncMarkersSGIX;
+extern PFNGLISASYNCMARKERSGIXPROC glIsAsyncMarkerSGIX;
+
+/* GL_SGIX_async_pixel */
+
+/* GL_SGIX_async_histogram */
+
+/* GL_INTEL_parallel_arrays */
+extern PFNGLVERTEXPOINTERVINTELPROC glVertexPointervINTEL;
+extern PFNGLNORMALPOINTERVINTELPROC glNormalPointervINTEL;
+extern PFNGLCOLORPOINTERVINTELPROC glColorPointervINTEL;
+extern PFNGLTEXCOORDPOINTERVINTELPROC glTexCoordPointervINTEL;
+
+/* GL_HP_occlusion_test */
+
+/* GL_EXT_pixel_transform */
+extern PFNGLPIXELTRANSFORMPARAMETERIEXTPROC glPixelTransformParameteriEXT;
+extern PFNGLPIXELTRANSFORMPARAMETERFEXTPROC glPixelTransformParameterfEXT;
+extern PFNGLPIXELTRANSFORMPARAMETERIVEXTPROC glPixelTransformParameterivEXT;
+extern PFNGLPIXELTRANSFORMPARAMETERFVEXTPROC glPixelTransformParameterfvEXT;
+
+/* GL_EXT_pixel_transform_color_table */
+
+/* GL_EXT_shared_texture_palette */
+
+/* GL_EXT_separate_specular_color */
+
+/* GL_EXT_secondary_color */
+extern PFNGLSECONDARYCOLOR3BEXTPROC glSecondaryColor3bEXT;
+extern PFNGLSECONDARYCOLOR3BVEXTPROC glSecondaryColor3bvEXT;
+extern PFNGLSECONDARYCOLOR3DEXTPROC glSecondaryColor3dEXT;
+extern PFNGLSECONDARYCOLOR3DVEXTPROC glSecondaryColor3dvEXT;
+extern PFNGLSECONDARYCOLOR3FEXTPROC glSecondaryColor3fEXT;
+extern PFNGLSECONDARYCOLOR3FVEXTPROC glSecondaryColor3fvEXT;
+extern PFNGLSECONDARYCOLOR3IEXTPROC glSecondaryColor3iEXT;
+extern PFNGLSECONDARYCOLOR3IVEXTPROC glSecondaryColor3ivEXT;
+extern PFNGLSECONDARYCOLOR3SEXTPROC glSecondaryColor3sEXT;
+extern PFNGLSECONDARYCOLOR3SVEXTPROC glSecondaryColor3svEXT;
+extern PFNGLSECONDARYCOLOR3UBEXTPROC glSecondaryColor3ubEXT;
+extern PFNGLSECONDARYCOLOR3UBVEXTPROC glSecondaryColor3ubvEXT;
+extern PFNGLSECONDARYCOLOR3UIEXTPROC glSecondaryColor3uiEXT;
+extern PFNGLSECONDARYCOLOR3UIVEXTPROC glSecondaryColor3uivEXT;
+extern PFNGLSECONDARYCOLOR3USEXTPROC glSecondaryColor3usEXT;
+extern PFNGLSECONDARYCOLOR3USVEXTPROC glSecondaryColor3usvEXT;
+extern PFNGLSECONDARYCOLORPOINTEREXTPROC glSecondaryColorPointerEXT;
+
+/* GL_EXT_texture_perturb_normal */
+extern PFNGLTEXTURENORMALEXTPROC glTextureNormalEXT;
+
+/* GL_EXT_multi_draw_arrays */
+extern PFNGLMULTIDRAWARRAYSEXTPROC glMultiDrawArraysEXT;
+extern PFNGLMULTIDRAWELEMENTSEXTPROC glMultiDrawElementsEXT;
+
+/* GL_EXT_fog_coord */
+extern PFNGLFOGCOORDFEXTPROC glFogCoordfEXT;
+extern PFNGLFOGCOORDFVEXTPROC glFogCoordfvEXT;
+extern PFNGLFOGCOORDDEXTPROC glFogCoorddEXT;
+extern PFNGLFOGCOORDDVEXTPROC glFogCoorddvEXT;
+extern PFNGLFOGCOORDPOINTEREXTPROC glFogCoordPointerEXT;
+
+/* GL_REND_screen_coordinates */
+
+/* GL_EXT_coordinate_frame */
+extern PFNGLTANGENT3BEXTPROC glTangent3bEXT;
+extern PFNGLTANGENT3BVEXTPROC glTangent3bvEXT;
+extern PFNGLTANGENT3DEXTPROC glTangent3dEXT;
+extern PFNGLTANGENT3DVEXTPROC glTangent3dvEXT;
+extern PFNGLTANGENT3FEXTPROC glTangent3fEXT;
+extern PFNGLTANGENT3FVEXTPROC glTangent3fvEXT;
+extern PFNGLTANGENT3IEXTPROC glTangent3iEXT;
+extern PFNGLTANGENT3IVEXTPROC glTangent3ivEXT;
+extern PFNGLTANGENT3SEXTPROC glTangent3sEXT;
+extern PFNGLTANGENT3SVEXTPROC glTangent3svEXT;
+extern PFNGLBINORMAL3BEXTPROC glBinormal3bEXT;
+extern PFNGLBINORMAL3BVEXTPROC glBinormal3bvEXT;
+extern PFNGLBINORMAL3DEXTPROC glBinormal3dEXT;
+extern PFNGLBINORMAL3DVEXTPROC glBinormal3dvEXT;
+extern PFNGLBINORMAL3FEXTPROC glBinormal3fEXT;
+extern PFNGLBINORMAL3FVEXTPROC glBinormal3fvEXT;
+extern PFNGLBINORMAL3IEXTPROC glBinormal3iEXT;
+extern PFNGLBINORMAL3IVEXTPROC glBinormal3ivEXT;
+extern PFNGLBINORMAL3SEXTPROC glBinormal3sEXT;
+extern PFNGLBINORMAL3SVEXTPROC glBinormal3svEXT;
+extern PFNGLTANGENTPOINTEREXTPROC glTangentPointerEXT;
+extern PFNGLBINORMALPOINTEREXTPROC glBinormalPointerEXT;
+
+/* GL_EXT_texture_env_combine */
+
+/* GL_APPLE_specular_vector */
+
+/* GL_APPLE_transform_hint */
+
+/* GL_SGIX_fog_scale */
+
+/* GL_SUNX_constant_data */
+extern PFNGLFINISHTEXTURESUNXPROC glFinishTextureSUNX;
+
+/* GL_SUN_global_alpha */
+extern PFNGLGLOBALALPHAFACTORBSUNPROC glGlobalAlphaFactorbSUN;
+extern PFNGLGLOBALALPHAFACTORSSUNPROC glGlobalAlphaFactorsSUN;
+extern PFNGLGLOBALALPHAFACTORISUNPROC glGlobalAlphaFactoriSUN;
+extern PFNGLGLOBALALPHAFACTORFSUNPROC glGlobalAlphaFactorfSUN;
+extern PFNGLGLOBALALPHAFACTORDSUNPROC glGlobalAlphaFactordSUN;
+extern PFNGLGLOBALALPHAFACTORUBSUNPROC glGlobalAlphaFactorubSUN;
+extern PFNGLGLOBALALPHAFACTORUSSUNPROC glGlobalAlphaFactorusSUN;
+extern PFNGLGLOBALALPHAFACTORUISUNPROC glGlobalAlphaFactoruiSUN;
+
+/* GL_SUN_triangle_list */
+extern PFNGLREPLACEMENTCODEUISUNPROC glReplacementCodeuiSUN;
+extern PFNGLREPLACEMENTCODEUSSUNPROC glReplacementCodeusSUN;
+extern PFNGLREPLACEMENTCODEUBSUNPROC glReplacementCodeubSUN;
+extern PFNGLREPLACEMENTCODEUIVSUNPROC glReplacementCodeuivSUN;
+extern PFNGLREPLACEMENTCODEUSVSUNPROC glReplacementCodeusvSUN;
+extern PFNGLREPLACEMENTCODEUBVSUNPROC glReplacementCodeubvSUN;
+extern PFNGLREPLACEMENTCODEPOINTERSUNPROC glReplacementCodePointerSUN;
+
+/* GL_SUN_vertex */
+extern PFNGLCOLOR4UBVERTEX2FSUNPROC glColor4ubVertex2fSUN;
+extern PFNGLCOLOR4UBVERTEX2FVSUNPROC glColor4ubVertex2fvSUN;
+extern PFNGLCOLOR4UBVERTEX3FSUNPROC glColor4ubVertex3fSUN;
+extern PFNGLCOLOR4UBVERTEX3FVSUNPROC glColor4ubVertex3fvSUN;
+extern PFNGLCOLOR3FVERTEX3FSUNPROC glColor3fVertex3fSUN;
+extern PFNGLCOLOR3FVERTEX3FVSUNPROC glColor3fVertex3fvSUN;
+extern PFNGLNORMAL3FVERTEX3FSUNPROC glNormal3fVertex3fSUN;
+extern PFNGLNORMAL3FVERTEX3FVSUNPROC glNormal3fVertex3fvSUN;
+extern PFNGLCOLOR4FNORMAL3FVERTEX3FSUNPROC glColor4fNormal3fVertex3fSUN;
+extern PFNGLCOLOR4FNORMAL3FVERTEX3FVSUNPROC glColor4fNormal3fVertex3fvSUN;
+extern PFNGLTEXCOORD2FVERTEX3FSUNPROC glTexCoord2fVertex3fSUN;
+extern PFNGLTEXCOORD2FVERTEX3FVSUNPROC glTexCoord2fVertex3fvSUN;
+extern PFNGLTEXCOORD4FVERTEX4FSUNPROC glTexCoord4fVertex4fSUN;
+extern PFNGLTEXCOORD4FVERTEX4FVSUNPROC glTexCoord4fVertex4fvSUN;
+extern PFNGLTEXCOORD2FCOLOR4UBVERTEX3FSUNPROC glTexCoord2fColor4ubVertex3fSUN;
+extern PFNGLTEXCOORD2FCOLOR4UBVERTEX3FVSUNPROC glTexCoord2fColor4ubVertex3fvSUN;
+extern PFNGLTEXCOORD2FCOLOR3FVERTEX3FSUNPROC glTexCoord2fColor3fVertex3fSUN;
+extern PFNGLTEXCOORD2FCOLOR3FVERTEX3FVSUNPROC glTexCoord2fColor3fVertex3fvSUN;
+extern PFNGLTEXCOORD2FNORMAL3FVERTEX3FSUNPROC glTexCoord2fNormal3fVertex3fSUN;
+extern PFNGLTEXCOORD2FNORMAL3FVERTEX3FVSUNPROC glTexCoord2fNormal3fVertex3fvSUN;
+extern PFNGLTEXCOORD2FCOLOR4FNORMAL3FVERTEX3FSUNPROC glTexCoord2fColor4fNormal3fVertex3fSUN;
+extern PFNGLTEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC glTexCoord2fColor4fNormal3fVertex3fvSUN;
+extern PFNGLTEXCOORD4FCOLOR4FNORMAL3FVERTEX4FSUNPROC glTexCoord4fColor4fNormal3fVertex4fSUN;
+extern PFNGLTEXCOORD4FCOLOR4FNORMAL3FVERTEX4FVSUNPROC glTexCoord4fColor4fNormal3fVertex4fvSUN;
+extern PFNGLREPLACEMENTCODEUIVERTEX3FSUNPROC glReplacementCodeuiVertex3fSUN;
+extern PFNGLREPLACEMENTCODEUIVERTEX3FVSUNPROC glReplacementCodeuiVertex3fvSUN;
+extern PFNGLREPLACEMENTCODEUICOLOR4UBVERTEX3FSUNPROC glReplacementCodeuiColor4ubVertex3fSUN;
+extern PFNGLREPLACEMENTCODEUICOLOR4UBVERTEX3FVSUNPROC glReplacementCodeuiColor4ubVertex3fvSUN;
+extern PFNGLREPLACEMENTCODEUICOLOR3FVERTEX3FSUNPROC glReplacementCodeuiColor3fVertex3fSUN;
+extern PFNGLREPLACEMENTCODEUICOLOR3FVERTEX3FVSUNPROC glReplacementCodeuiColor3fVertex3fvSUN;
+extern PFNGLREPLACEMENTCODEUINORMAL3FVERTEX3FSUNPROC glReplacementCodeuiNormal3fVertex3fSUN;
+extern PFNGLREPLACEMENTCODEUINORMAL3FVERTEX3FVSUNPROC glReplacementCodeuiNormal3fVertex3fvSUN;
+extern PFNGLREPLACEMENTCODEUICOLOR4FNORMAL3FVERTEX3FSUNPROC glReplacementCodeuiColor4fNormal3fVertex3fSUN;
+extern PFNGLREPLACEMENTCODEUICOLOR4FNORMAL3FVERTEX3FVSUNPROC glReplacementCodeuiColor4fNormal3fVertex3fvSUN;
+extern PFNGLREPLACEMENTCODEUITEXCOORD2FVERTEX3FSUNPROC glReplacementCodeuiTexCoord2fVertex3fSUN;
+extern PFNGLREPLACEMENTCODEUITEXCOORD2FVERTEX3FVSUNPROC glReplacementCodeuiTexCoord2fVertex3fvSUN;
+extern PFNGLREPLACEMENTCODEUITEXCOORD2FNORMAL3FVERTEX3FSUNPROC glReplacementCodeuiTexCoord2fNormal3fVertex3fSUN;
+extern PFNGLREPLACEMENTCODEUITEXCOORD2FNORMAL3FVERTEX3FVSUNPROC glReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN;
+extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FSUNPROC glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fSUN;
+extern PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN;
+
+/* GL_EXT_blend_func_separate */
+extern PFNGLBLENDFUNCSEPARATEEXTPROC glBlendFuncSeparateEXT;
+
+/* GL_INGR_blend_func_separate */
+extern PFNGLBLENDFUNCSEPARATEINGRPROC glBlendFuncSeparateINGR;
+
+/* GL_INGR_color_clamp */
+
+/* GL_INGR_interlace_read */
+
+/* GL_EXT_stencil_wrap */
+
+/* GL_EXT_422_pixels */
+
+/* GL_NV_texgen_reflection */
+
+/* GL_SUN_convolution_border_modes */
+
+/* GL_EXT_texture_env_add */
+
+/* GL_EXT_texture_lod_bias */
+
+/* GL_EXT_texture_filter_anisotropic */
+
+/* GL_EXT_vertex_weighting */
+extern PFNGLVERTEXWEIGHTFEXTPROC glVertexWeightfEXT;
+extern PFNGLVERTEXWEIGHTFVEXTPROC glVertexWeightfvEXT;
+extern PFNGLVERTEXWEIGHTPOINTEREXTPROC glVertexWeightPointerEXT;
+
+/* GL_NV_light_max_exponent */
+
+/* GL_NV_vertex_array_range */
+extern PFNGLFLUSHVERTEXARRAYRANGENVPROC glFlushVertexArrayRangeNV;
+extern PFNGLVERTEXARRAYRANGENVPROC glVertexArrayRangeNV;
+
+/* GL_NV_register_combiners */
+extern PFNGLCOMBINERPARAMETERFVNVPROC glCombinerParameterfvNV;
+extern PFNGLCOMBINERPARAMETERFNVPROC glCombinerParameterfNV;
+extern PFNGLCOMBINERPARAMETERIVNVPROC glCombinerParameterivNV;
+extern PFNGLCOMBINERPARAMETERINVPROC glCombinerParameteriNV;
+extern PFNGLCOMBINERINPUTNVPROC glCombinerInputNV;
+extern PFNGLCOMBINEROUTPUTNVPROC glCombinerOutputNV;
+extern PFNGLFINALCOMBINERINPUTNVPROC glFinalCombinerInputNV;
+extern PFNGLGETCOMBINERINPUTPARAMETERFVNVPROC glGetCombinerInputParameterfvNV;
+extern PFNGLGETCOMBINERINPUTPARAMETERIVNVPROC glGetCombinerInputParameterivNV;
+extern PFNGLGETCOMBINEROUTPUTPARAMETERFVNVPROC glGetCombinerOutputParameterfvNV;
+extern PFNGLGETCOMBINEROUTPUTPARAMETERIVNVPROC glGetCombinerOutputParameterivNV;
+extern PFNGLGETFINALCOMBINERINPUTPARAMETERFVNVPROC glGetFinalCombinerInputParameterfvNV;
+extern PFNGLGETFINALCOMBINERINPUTPARAMETERIVNVPROC glGetFinalCombinerInputParameterivNV;
+
+/* GL_NV_fog_distance */
+
+/* GL_NV_texgen_emboss */
+
+/* GL_NV_blend_square */
+
+/* GL_NV_texture_env_combine4 */
+
+/* GL_MESA_resize_buffers */
+extern PFNGLRESIZEBUFFERSMESAPROC glResizeBuffersMESA;
+
+/* GL_MESA_window_pos */
+extern PFNGLWINDOWPOS2DMESAPROC glWindowPos2dMESA;
+extern PFNGLWINDOWPOS2DVMESAPROC glWindowPos2dvMESA;
+extern PFNGLWINDOWPOS2FMESAPROC glWindowPos2fMESA;
+extern PFNGLWINDOWPOS2FVMESAPROC glWindowPos2fvMESA;
+extern PFNGLWINDOWPOS2IMESAPROC glWindowPos2iMESA;
+extern PFNGLWINDOWPOS2IVMESAPROC glWindowPos2ivMESA;
+extern PFNGLWINDOWPOS2SMESAPROC glWindowPos2sMESA;
+extern PFNGLWINDOWPOS2SVMESAPROC glWindowPos2svMESA;
+extern PFNGLWINDOWPOS3DMESAPROC glWindowPos3dMESA;
+extern PFNGLWINDOWPOS3DVMESAPROC glWindowPos3dvMESA;
+extern PFNGLWINDOWPOS3FMESAPROC glWindowPos3fMESA;
+extern PFNGLWINDOWPOS3FVMESAPROC glWindowPos3fvMESA;
+extern PFNGLWINDOWPOS3IMESAPROC glWindowPos3iMESA;
+extern PFNGLWINDOWPOS3IVMESAPROC glWindowPos3ivMESA;
+extern PFNGLWINDOWPOS3SMESAPROC glWindowPos3sMESA;
+extern PFNGLWINDOWPOS3SVMESAPROC glWindowPos3svMESA;
+extern PFNGLWINDOWPOS4DMESAPROC glWindowPos4dMESA;
+extern PFNGLWINDOWPOS4DVMESAPROC glWindowPos4dvMESA;
+extern PFNGLWINDOWPOS4FMESAPROC glWindowPos4fMESA;
+extern PFNGLWINDOWPOS4FVMESAPROC glWindowPos4fvMESA;
+extern PFNGLWINDOWPOS4IMESAPROC glWindowPos4iMESA;
+extern PFNGLWINDOWPOS4IVMESAPROC glWindowPos4ivMESA;
+extern PFNGLWINDOWPOS4SMESAPROC glWindowPos4sMESA;
+extern PFNGLWINDOWPOS4SVMESAPROC glWindowPos4svMESA;
+
+/* GL_IBM_cull_vertex */
+
+/* GL_IBM_multimode_draw_arrays */
+extern PFNGLMULTIMODEDRAWARRAYSIBMPROC glMultiModeDrawArraysIBM;
+extern PFNGLMULTIMODEDRAWELEMENTSIBMPROC glMultiModeDrawElementsIBM;
+
+/* GL_IBM_vertex_array_lists */
+extern PFNGLCOLORPOINTERLISTIBMPROC glColorPointerListIBM;
+extern PFNGLSECONDARYCOLORPOINTERLISTIBMPROC glSecondaryColorPointerListIBM;
+extern PFNGLEDGEFLAGPOINTERLISTIBMPROC glEdgeFlagPointerListIBM;
+extern PFNGLFOGCOORDPOINTERLISTIBMPROC glFogCoordPointerListIBM;
+extern PFNGLINDEXPOINTERLISTIBMPROC glIndexPointerListIBM;
+extern PFNGLNORMALPOINTERLISTIBMPROC glNormalPointerListIBM;
+extern PFNGLTEXCOORDPOINTERLISTIBMPROC glTexCoordPointerListIBM;
+extern PFNGLVERTEXPOINTERLISTIBMPROC glVertexPointerListIBM;
+
+/* GL_SGIX_subsample */
+
+/* GL_SGIX_ycrcba */
+
+/* GL_SGIX_ycrcb_subsample */
+
+/* GL_SGIX_depth_pass_instrument */
+
+/* GL_3DFX_texture_compression_FXT1 */
+
+/* GL_3DFX_multisample */
+
+/* GL_3DFX_tbuffer */
+extern PFNGLTBUFFERMASK3DFXPROC glTbufferMask3DFX;
+
+/* GL_EXT_multisample */
+extern PFNGLSAMPLEMASKEXTPROC glSampleMaskEXT;
+extern PFNGLSAMPLEPATTERNEXTPROC glSamplePatternEXT;
+
+/* GL_SGIX_vertex_preclip */
+
+/* GL_SGIX_convolution_accuracy */
+
+/* GL_SGIX_resample */
+
+/* GL_SGIS_point_line_texgen */
+
+/* GL_SGIS_texture_color_mask */
+extern PFNGLTEXTURECOLORMASKSGISPROC glTextureColorMaskSGIS;
+
+/* GL_SGIX_igloo_interface */
+extern PFNGLIGLOOINTERFACESGIXPROC glIglooInterfaceSGIX;
+
+/* GL_EXT_texture_env_dot3 */
+
+/* GL_ATI_texture_mirror_once */
+
+/* GL_NV_fence */
+extern PFNGLDELETEFENCESNVPROC glDeleteFencesNV;
+extern PFNGLGENFENCESNVPROC glGenFencesNV;
+extern PFNGLISFENCENVPROC glIsFenceNV;
+extern PFNGLTESTFENCENVPROC glTestFenceNV;
+extern PFNGLGETFENCEIVNVPROC glGetFenceivNV;
+extern PFNGLFINISHFENCENVPROC glFinishFenceNV;
+extern PFNGLSETFENCENVPROC glSetFenceNV;
+
+/* GL_NV_evaluators */
+extern PFNGLMAPCONTROLPOINTSNVPROC glMapControlPointsNV;
+extern PFNGLMAPPARAMETERIVNVPROC glMapParameterivNV;
+extern PFNGLMAPPARAMETERFVNVPROC glMapParameterfvNV;
+extern PFNGLGETMAPCONTROLPOINTSNVPROC glGetMapControlPointsNV;
+extern PFNGLGETMAPPARAMETERIVNVPROC glGetMapParameterivNV;
+extern PFNGLGETMAPPARAMETERFVNVPROC glGetMapParameterfvNV;
+extern PFNGLGETMAPATTRIBPARAMETERIVNVPROC glGetMapAttribParameterivNV;
+extern PFNGLGETMAPATTRIBPARAMETERFVNVPROC glGetMapAttribParameterfvNV;
+extern PFNGLEVALMAPSNVPROC glEvalMapsNV;
+
+/* GL_NV_packed_depth_stencil */
+
+/* GL_NV_register_combiners2 */
+extern PFNGLCOMBINERSTAGEPARAMETERFVNVPROC glCombinerStageParameterfvNV;
+extern PFNGLGETCOMBINERSTAGEPARAMETERFVNVPROC glGetCombinerStageParameterfvNV;
+
+/* GL_NV_texture_compression_vtc */
+
+/* GL_NV_texture_rectangle */
+
+/* GL_NV_texture_shader */
+
+/* GL_NV_texture_shader2 */
+
+/* GL_NV_vertex_array_range2 */
+
+/* GL_NV_vertex_program */
+extern PFNGLAREPROGRAMSRESIDENTNVPROC glAreProgramsResidentNV;
+extern PFNGLBINDPROGRAMNVPROC glBindProgramNV;
+extern PFNGLDELETEPROGRAMSNVPROC glDeleteProgramsNV;
+extern PFNGLEXECUTEPROGRAMNVPROC glExecuteProgramNV;
+extern PFNGLGENPROGRAMSNVPROC glGenProgramsNV;
+extern PFNGLGETPROGRAMPARAMETERDVNVPROC glGetProgramParameterdvNV;
+extern PFNGLGETPROGRAMPARAMETERFVNVPROC glGetProgramParameterfvNV;
+extern PFNGLGETPROGRAMIVNVPROC glGetProgramivNV;
+extern PFNGLGETPROGRAMSTRINGNVPROC glGetProgramStringNV;
+extern PFNGLGETTRACKMATRIXIVNVPROC glGetTrackMatrixivNV;
+extern PFNGLGETVERTEXATTRIBDVNVPROC glGetVertexAttribdvNV;
+extern PFNGLGETVERTEXATTRIBFVNVPROC glGetVertexAttribfvNV;
+extern PFNGLGETVERTEXATTRIBIVNVPROC glGetVertexAttribivNV;
+extern PFNGLGETVERTEXATTRIBPOINTERVNVPROC glGetVertexAttribPointervNV;
+extern PFNGLISPROGRAMNVPROC glIsProgramNV;
+extern PFNGLLOADPROGRAMNVPROC glLoadProgramNV;
+extern PFNGLPROGRAMPARAMETER4DNVPROC glProgramParameter4dNV;
+extern PFNGLPROGRAMPARAMETER4DVNVPROC glProgramParameter4dvNV;
+extern PFNGLPROGRAMPARAMETER4FNVPROC glProgramParameter4fNV;
+extern PFNGLPROGRAMPARAMETER4FVNVPROC glProgramParameter4fvNV;
+extern PFNGLPROGRAMPARAMETERS4DVNVPROC glProgramParameters4dvNV;
+extern PFNGLPROGRAMPARAMETERS4FVNVPROC glProgramParameters4fvNV;
+extern PFNGLREQUESTRESIDENTPROGRAMSNVPROC glRequestResidentProgramsNV;
+extern PFNGLTRACKMATRIXNVPROC glTrackMatrixNV;
+extern PFNGLVERTEXATTRIBPOINTERNVPROC glVertexAttribPointerNV;
+extern PFNGLVERTEXATTRIB1DNVPROC glVertexAttrib1dNV;
+extern PFNGLVERTEXATTRIB1DVNVPROC glVertexAttrib1dvNV;
+extern PFNGLVERTEXATTRIB1FNVPROC glVertexAttrib1fNV;
+extern PFNGLVERTEXATTRIB1FVNVPROC glVertexAttrib1fvNV;
+extern PFNGLVERTEXATTRIB1SNVPROC glVertexAttrib1sNV;
+extern PFNGLVERTEXATTRIB1SVNVPROC glVertexAttrib1svNV;
+extern PFNGLVERTEXATTRIB2DNVPROC glVertexAttrib2dNV;
+extern PFNGLVERTEXATTRIB2DVNVPROC glVertexAttrib2dvNV;
+extern PFNGLVERTEXATTRIB2FNVPROC glVertexAttrib2fNV;
+extern PFNGLVERTEXATTRIB2FVNVPROC glVertexAttrib2fvNV;
+extern PFNGLVERTEXATTRIB2SNVPROC glVertexAttrib2sNV;
+extern PFNGLVERTEXATTRIB2SVNVPROC glVertexAttrib2svNV;
+extern PFNGLVERTEXATTRIB3DNVPROC glVertexAttrib3dNV;
+extern PFNGLVERTEXATTRIB3DVNVPROC glVertexAttrib3dvNV;
+extern PFNGLVERTEXATTRIB3FNVPROC glVertexAttrib3fNV;
+extern PFNGLVERTEXATTRIB3FVNVPROC glVertexAttrib3fvNV;
+extern PFNGLVERTEXATTRIB3SNVPROC glVertexAttrib3sNV;
+extern PFNGLVERTEXATTRIB3SVNVPROC glVertexAttrib3svNV;
+extern PFNGLVERTEXATTRIB4DNVPROC glVertexAttrib4dNV;
+extern PFNGLVERTEXATTRIB4DVNVPROC glVertexAttrib4dvNV;
+extern PFNGLVERTEXATTRIB4FNVPROC glVertexAttrib4fNV;
+extern PFNGLVERTEXATTRIB4FVNVPROC glVertexAttrib4fvNV;
+extern PFNGLVERTEXATTRIB4SNVPROC glVertexAttrib4sNV;
+extern PFNGLVERTEXATTRIB4SVNVPROC glVertexAttrib4svNV;
+extern PFNGLVERTEXATTRIB4UBNVPROC glVertexAttrib4ubNV;
+extern PFNGLVERTEXATTRIB4UBVNVPROC glVertexAttrib4ubvNV;
+extern PFNGLVERTEXATTRIBS1DVNVPROC glVertexAttribs1dvNV;
+extern PFNGLVERTEXATTRIBS1FVNVPROC glVertexAttribs1fvNV;
+extern PFNGLVERTEXATTRIBS1SVNVPROC glVertexAttribs1svNV;
+extern PFNGLVERTEXATTRIBS2DVNVPROC glVertexAttribs2dvNV;
+extern PFNGLVERTEXATTRIBS2FVNVPROC glVertexAttribs2fvNV;
+extern PFNGLVERTEXATTRIBS2SVNVPROC glVertexAttribs2svNV;
+extern PFNGLVERTEXATTRIBS3DVNVPROC glVertexAttribs3dvNV;
+extern PFNGLVERTEXATTRIBS3FVNVPROC glVertexAttribs3fvNV;
+extern PFNGLVERTEXATTRIBS3SVNVPROC glVertexAttribs3svNV;
+extern PFNGLVERTEXATTRIBS4DVNVPROC glVertexAttribs4dvNV;
+extern PFNGLVERTEXATTRIBS4FVNVPROC glVertexAttribs4fvNV;
+extern PFNGLVERTEXATTRIBS4SVNVPROC glVertexAttribs4svNV;
+extern PFNGLVERTEXATTRIBS4UBVNVPROC glVertexAttribs4ubvNV;
+
+/* GL_SGIX_texture_coordinate_clamp */
+
+/* GL_SGIX_scalebias_hint */
+
+/* GL_OML_interlace */
+
+/* GL_OML_subsample */
+
+/* GL_OML_resample */
+
+/* GL_NV_copy_depth_to_color */
+
+/* GL_ATI_envmap_bumpmap */
+extern PFNGLTEXBUMPPARAMETERIVATIPROC glTexBumpParameterivATI;
+extern PFNGLTEXBUMPPARAMETERFVATIPROC glTexBumpParameterfvATI;
+extern PFNGLGETTEXBUMPPARAMETERIVATIPROC glGetTexBumpParameterivATI;
+extern PFNGLGETTEXBUMPPARAMETERFVATIPROC glGetTexBumpParameterfvATI;
+
+/* GL_ATI_fragment_shader */
+extern PFNGLGENFRAGMENTSHADERSATIPROC glGenFragmentShadersATI;
+extern PFNGLBINDFRAGMENTSHADERATIPROC glBindFragmentShaderATI;
+extern PFNGLDELETEFRAGMENTSHADERATIPROC glDeleteFragmentShaderATI;
+extern PFNGLBEGINFRAGMENTSHADERATIPROC glBeginFragmentShaderATI;
+extern PFNGLENDFRAGMENTSHADERATIPROC glEndFragmentShaderATI;
+extern PFNGLPASSTEXCOORDATIPROC glPassTexCoordATI;
+extern PFNGLSAMPLEMAPATIPROC glSampleMapATI;
+extern PFNGLCOLORFRAGMENTOP1ATIPROC glColorFragmentOp1ATI;
+extern PFNGLCOLORFRAGMENTOP2ATIPROC glColorFragmentOp2ATI;
+extern PFNGLCOLORFRAGMENTOP3ATIPROC glColorFragmentOp3ATI;
+extern PFNGLALPHAFRAGMENTOP1ATIPROC glAlphaFragmentOp1ATI;
+extern PFNGLALPHAFRAGMENTOP2ATIPROC glAlphaFragmentOp2ATI;
+extern PFNGLALPHAFRAGMENTOP3ATIPROC glAlphaFragmentOp3ATI;
+extern PFNGLSETFRAGMENTSHADERCONSTANTATIPROC glSetFragmentShaderConstantATI;
+
+/* GL_ATI_pn_triangles */
+extern PFNGLPNTRIANGLESIATIPROC glPNTrianglesiATI;
+extern PFNGLPNTRIANGLESFATIPROC glPNTrianglesfATI;
+
+/* GL_ATI_vertex_array_object */
+extern PFNGLNEWOBJECTBUFFERATIPROC glNewObjectBufferATI;
+extern PFNGLISOBJECTBUFFERATIPROC glIsObjectBufferATI;
+extern PFNGLUPDATEOBJECTBUFFERATIPROC glUpdateObjectBufferATI;
+extern PFNGLGETOBJECTBUFFERFVATIPROC glGetObjectBufferfvATI;
+extern PFNGLGETOBJECTBUFFERIVATIPROC glGetObjectBufferivATI;
+extern PFNGLFREEOBJECTBUFFERATIPROC glFreeObjectBufferATI;
+extern PFNGLARRAYOBJECTATIPROC glArrayObjectATI;
+extern PFNGLGETARRAYOBJECTFVATIPROC glGetArrayObjectfvATI;
+extern PFNGLGETARRAYOBJECTIVATIPROC glGetArrayObjectivATI;
+extern PFNGLVARIANTARRAYOBJECTATIPROC glVariantArrayObjectATI;
+extern PFNGLGETVARIANTARRAYOBJECTFVATIPROC glGetVariantArrayObjectfvATI;
+extern PFNGLGETVARIANTARRAYOBJECTIVATIPROC glGetVariantArrayObjectivATI;
+
+/* GL_EXT_vertex_shader */
+extern PFNGLBEGINVERTEXSHADEREXTPROC glBeginVertexShaderEXT;
+extern PFNGLENDVERTEXSHADEREXTPROC glEndVertexShaderEXT;
+extern PFNGLBINDVERTEXSHADEREXTPROC glBindVertexShaderEXT;
+extern PFNGLGENVERTEXSHADERSEXTPROC glGenVertexShadersEXT;
+extern PFNGLDELETEVERTEXSHADEREXTPROC glDeleteVertexShaderEXT;
+extern PFNGLSHADEROP1EXTPROC glShaderOp1EXT;
+extern PFNGLSHADEROP2EXTPROC glShaderOp2EXT;
+extern PFNGLSHADEROP3EXTPROC glShaderOp3EXT;
+extern PFNGLSWIZZLEEXTPROC glSwizzleEXT;
+extern PFNGLWRITEMASKEXTPROC glWriteMaskEXT;
+extern PFNGLINSERTCOMPONENTEXTPROC glInsertComponentEXT;
+extern PFNGLEXTRACTCOMPONENTEXTPROC glExtractComponentEXT;
+extern PFNGLGENSYMBOLSEXTPROC glGenSymbolsEXT;
+extern PFNGLSETINVARIANTEXTPROC glSetInvariantEXT;
+extern PFNGLSETLOCALCONSTANTEXTPROC glSetLocalConstantEXT;
+extern PFNGLVARIANTBVEXTPROC glVariantbvEXT;
+extern PFNGLVARIANTSVEXTPROC glVariantsvEXT;
+extern PFNGLVARIANTIVEXTPROC glVariantivEXT;
+extern PFNGLVARIANTFVEXTPROC glVariantfvEXT;
+extern PFNGLVARIANTDVEXTPROC glVariantdvEXT;
+extern PFNGLVARIANTUBVEXTPROC glVariantubvEXT;
+extern PFNGLVARIANTUSVEXTPROC glVariantusvEXT;
+extern PFNGLVARIANTUIVEXTPROC glVariantuivEXT;
+extern PFNGLVARIANTPOINTEREXTPROC glVariantPointerEXT;
+extern PFNGLENABLEVARIANTCLIENTSTATEEXTPROC glEnableVariantClientStateEXT;
+extern PFNGLDISABLEVARIANTCLIENTSTATEEXTPROC glDisableVariantClientStateEXT;
+extern PFNGLBINDLIGHTPARAMETEREXTPROC glBindLightParameterEXT;
+extern PFNGLBINDMATERIALPARAMETEREXTPROC glBindMaterialParameterEXT;
+extern PFNGLBINDTEXGENPARAMETEREXTPROC glBindTexGenParameterEXT;
+extern PFNGLBINDTEXTUREUNITPARAMETEREXTPROC glBindTextureUnitParameterEXT;
+extern PFNGLBINDPARAMETEREXTPROC glBindParameterEXT;
+extern PFNGLISVARIANTENABLEDEXTPROC glIsVariantEnabledEXT;
+extern PFNGLGETVARIANTBOOLEANVEXTPROC glGetVariantBooleanvEXT;
+extern PFNGLGETVARIANTINTEGERVEXTPROC glGetVariantIntegervEXT;
+extern PFNGLGETVARIANTFLOATVEXTPROC glGetVariantFloatvEXT;
+extern PFNGLGETVARIANTPOINTERVEXTPROC glGetVariantPointervEXT;
+extern PFNGLGETINVARIANTBOOLEANVEXTPROC glGetInvariantBooleanvEXT;
+extern PFNGLGETINVARIANTINTEGERVEXTPROC glGetInvariantIntegervEXT;
+extern PFNGLGETINVARIANTFLOATVEXTPROC glGetInvariantFloatvEXT;
+extern PFNGLGETLOCALCONSTANTBOOLEANVEXTPROC glGetLocalConstantBooleanvEXT;
+extern PFNGLGETLOCALCONSTANTINTEGERVEXTPROC glGetLocalConstantIntegervEXT;
+extern PFNGLGETLOCALCONSTANTFLOATVEXTPROC glGetLocalConstantFloatvEXT;
+
+/* GL_ATI_vertex_streams */
+extern PFNGLVERTEXSTREAM1SATIPROC glVertexStream1sATI;
+extern PFNGLVERTEXSTREAM1SVATIPROC glVertexStream1svATI;
+extern PFNGLVERTEXSTREAM1IATIPROC glVertexStream1iATI;
+extern PFNGLVERTEXSTREAM1IVATIPROC glVertexStream1ivATI;
+extern PFNGLVERTEXSTREAM1FATIPROC glVertexStream1fATI;
+extern PFNGLVERTEXSTREAM1FVATIPROC glVertexStream1fvATI;
+extern PFNGLVERTEXSTREAM1DATIPROC glVertexStream1dATI;
+extern PFNGLVERTEXSTREAM1DVATIPROC glVertexStream1dvATI;
+extern PFNGLVERTEXSTREAM2SATIPROC glVertexStream2sATI;
+extern PFNGLVERTEXSTREAM2SVATIPROC glVertexStream2svATI;
+extern PFNGLVERTEXSTREAM2IATIPROC glVertexStream2iATI;
+extern PFNGLVERTEXSTREAM2IVATIPROC glVertexStream2ivATI;
+extern PFNGLVERTEXSTREAM2FATIPROC glVertexStream2fATI;
+extern PFNGLVERTEXSTREAM2FVATIPROC glVertexStream2fvATI;
+extern PFNGLVERTEXSTREAM2DATIPROC glVertexStream2dATI;
+extern PFNGLVERTEXSTREAM2DVATIPROC glVertexStream2dvATI;
+extern PFNGLVERTEXSTREAM3SATIPROC glVertexStream3sATI;
+extern PFNGLVERTEXSTREAM3SVATIPROC glVertexStream3svATI;
+extern PFNGLVERTEXSTREAM3IATIPROC glVertexStream3iATI;
+extern PFNGLVERTEXSTREAM3IVATIPROC glVertexStream3ivATI;
+extern PFNGLVERTEXSTREAM3FATIPROC glVertexStream3fATI;
+extern PFNGLVERTEXSTREAM3FVATIPROC glVertexStream3fvATI;
+extern PFNGLVERTEXSTREAM3DATIPROC glVertexStream3dATI;
+extern PFNGLVERTEXSTREAM3DVATIPROC glVertexStream3dvATI;
+extern PFNGLVERTEXSTREAM4SATIPROC glVertexStream4sATI;
+extern PFNGLVERTEXSTREAM4SVATIPROC glVertexStream4svATI;
+extern PFNGLVERTEXSTREAM4IATIPROC glVertexStream4iATI;
+extern PFNGLVERTEXSTREAM4IVATIPROC glVertexStream4ivATI;
+extern PFNGLVERTEXSTREAM4FATIPROC glVertexStream4fATI;
+extern PFNGLVERTEXSTREAM4FVATIPROC glVertexStream4fvATI;
+extern PFNGLVERTEXSTREAM4DATIPROC glVertexStream4dATI;
+extern PFNGLVERTEXSTREAM4DVATIPROC glVertexStream4dvATI;
+extern PFNGLNORMALSTREAM3BATIPROC glNormalStream3bATI;
+extern PFNGLNORMALSTREAM3BVATIPROC glNormalStream3bvATI;
+extern PFNGLNORMALSTREAM3SATIPROC glNormalStream3sATI;
+extern PFNGLNORMALSTREAM3SVATIPROC glNormalStream3svATI;
+extern PFNGLNORMALSTREAM3IATIPROC glNormalStream3iATI;
+extern PFNGLNORMALSTREAM3IVATIPROC glNormalStream3ivATI;
+extern PFNGLNORMALSTREAM3FATIPROC glNormalStream3fATI;
+extern PFNGLNORMALSTREAM3FVATIPROC glNormalStream3fvATI;
+extern PFNGLNORMALSTREAM3DATIPROC glNormalStream3dATI;
+extern PFNGLNORMALSTREAM3DVATIPROC glNormalStream3dvATI;
+extern PFNGLCLIENTACTIVEVERTEXSTREAMATIPROC glClientActiveVertexStreamATI;
+extern PFNGLVERTEXBLENDENVIATIPROC glVertexBlendEnviATI;
+extern PFNGLVERTEXBLENDENVFATIPROC glVertexBlendEnvfATI;
+
+/* GL_ATI_element_array */
+extern PFNGLELEMENTPOINTERATIPROC glElementPointerATI;
+extern PFNGLDRAWELEMENTARRAYATIPROC glDrawElementArrayATI;
+extern PFNGLDRAWRANGEELEMENTARRAYATIPROC glDrawRangeElementArrayATI;
+
+/* GL_SUN_mesh_array */
+extern PFNGLDRAWMESHARRAYSSUNPROC glDrawMeshArraysSUN;
+
+/* GL_SUN_slice_accum */
+
+/* GL_NV_multisample_filter_hint */
+
+/* GL_NV_depth_clamp */
+
+/* GL_NV_occlusion_query */
+extern PFNGLGENOCCLUSIONQUERIESNVPROC glGenOcclusionQueriesNV;
+extern PFNGLDELETEOCCLUSIONQUERIESNVPROC glDeleteOcclusionQueriesNV;
+extern PFNGLISOCCLUSIONQUERYNVPROC glIsOcclusionQueryNV;
+extern PFNGLBEGINOCCLUSIONQUERYNVPROC glBeginOcclusionQueryNV;
+extern PFNGLENDOCCLUSIONQUERYNVPROC glEndOcclusionQueryNV;
+extern PFNGLGETOCCLUSIONQUERYIVNVPROC glGetOcclusionQueryivNV;
+extern PFNGLGETOCCLUSIONQUERYUIVNVPROC glGetOcclusionQueryuivNV;
+
+/* GL_NV_point_sprite */
+extern PFNGLPOINTPARAMETERINVPROC glPointParameteriNV;
+extern PFNGLPOINTPARAMETERIVNVPROC glPointParameterivNV;
+
+/* GL_NV_texture_shader3 */
+
+/* GL_NV_vertex_program1_1 */
+
+/* GL_EXT_shadow_funcs */
+
+/* GL_EXT_stencil_two_side */
+extern PFNGLACTIVESTENCILFACEEXTPROC glActiveStencilFaceEXT;
+
+/* GL_ATI_text_fragment_shader */
+
+/* GL_APPLE_client_storage */
+
+/* GL_APPLE_element_array */
+extern PFNGLELEMENTPOINTERAPPLEPROC glElementPointerAPPLE;
+extern PFNGLDRAWELEMENTARRAYAPPLEPROC glDrawElementArrayAPPLE;
+extern PFNGLDRAWRANGEELEMENTARRAYAPPLEPROC glDrawRangeElementArrayAPPLE;
+extern PFNGLMULTIDRAWELEMENTARRAYAPPLEPROC glMultiDrawElementArrayAPPLE;
+extern PFNGLMULTIDRAWRANGEELEMENTARRAYAPPLEPROC glMultiDrawRangeElementArrayAPPLE;
+
+/* GL_APPLE_fence */
+extern PFNGLGENFENCESAPPLEPROC glGenFencesAPPLE;
+extern PFNGLDELETEFENCESAPPLEPROC glDeleteFencesAPPLE;
+extern PFNGLSETFENCEAPPLEPROC glSetFenceAPPLE;
+extern PFNGLISFENCEAPPLEPROC glIsFenceAPPLE;
+extern PFNGLTESTFENCEAPPLEPROC glTestFenceAPPLE;
+extern PFNGLFINISHFENCEAPPLEPROC glFinishFenceAPPLE;
+extern PFNGLTESTOBJECTAPPLEPROC glTestObjectAPPLE;
+extern PFNGLFINISHOBJECTAPPLEPROC glFinishObjectAPPLE;
+
+/* GL_APPLE_vertex_array_object */
+extern PFNGLBINDVERTEXARRAYAPPLEPROC glBindVertexArrayAPPLE;
+extern PFNGLDELETEVERTEXARRAYSAPPLEPROC glDeleteVertexArraysAPPLE;
+extern PFNGLGENVERTEXARRAYSAPPLEPROC glGenVertexArraysAPPLE;
+extern PFNGLISVERTEXARRAYAPPLEPROC glIsVertexArrayAPPLE;
+
+/* GL_APPLE_vertex_array_range */
+extern PFNGLVERTEXARRAYRANGEAPPLEPROC glVertexArrayRangeAPPLE;
+extern PFNGLFLUSHVERTEXARRAYRANGEAPPLEPROC glFlushVertexArrayRangeAPPLE;
+extern PFNGLVERTEXARRAYPARAMETERIAPPLEPROC glVertexArrayParameteriAPPLE;
+
+/* GL_APPLE_ycbcr_422 */
+
+/* GL_S3_s3tc */
+
+/* GL_ATI_draw_buffers */
+extern PFNGLDRAWBUFFERSATIPROC glDrawBuffersATI;
+
+/* GL_ATI_pixel_format_float */
+
+/* GL_ATI_texture_env_combine3 */
+
+/* GL_ATI_texture_float */
+
+/* GL_NV_float_buffer */
+
+/* GL_NV_fragment_program */
+extern PFNGLPROGRAMNAMEDPARAMETER4FNVPROC glProgramNamedParameter4fNV;
+extern PFNGLPROGRAMNAMEDPARAMETER4DNVPROC glProgramNamedParameter4dNV;
+extern PFNGLPROGRAMNAMEDPARAMETER4FVNVPROC glProgramNamedParameter4fvNV;
+extern PFNGLPROGRAMNAMEDPARAMETER4DVNVPROC glProgramNamedParameter4dvNV;
+extern PFNGLGETPROGRAMNAMEDPARAMETERFVNVPROC glGetProgramNamedParameterfvNV;
+extern PFNGLGETPROGRAMNAMEDPARAMETERDVNVPROC glGetProgramNamedParameterdvNV;
+
+/* GL_NV_half_float */
+extern PFNGLVERTEX2HNVPROC glVertex2hNV;
+extern PFNGLVERTEX2HVNVPROC glVertex2hvNV;
+extern PFNGLVERTEX3HNVPROC glVertex3hNV;
+extern PFNGLVERTEX3HVNVPROC glVertex3hvNV;
+extern PFNGLVERTEX4HNVPROC glVertex4hNV;
+extern PFNGLVERTEX4HVNVPROC glVertex4hvNV;
+extern PFNGLNORMAL3HNVPROC glNormal3hNV;
+extern PFNGLNORMAL3HVNVPROC glNormal3hvNV;
+extern PFNGLCOLOR3HNVPROC glColor3hNV;
+extern PFNGLCOLOR3HVNVPROC glColor3hvNV;
+extern PFNGLCOLOR4HNVPROC glColor4hNV;
+extern PFNGLCOLOR4HVNVPROC glColor4hvNV;
+extern PFNGLTEXCOORD1HNVPROC glTexCoord1hNV;
+extern PFNGLTEXCOORD1HVNVPROC glTexCoord1hvNV;
+extern PFNGLTEXCOORD2HNVPROC glTexCoord2hNV;
+extern PFNGLTEXCOORD2HVNVPROC glTexCoord2hvNV;
+extern PFNGLTEXCOORD3HNVPROC glTexCoord3hNV;
+extern PFNGLTEXCOORD3HVNVPROC glTexCoord3hvNV;
+extern PFNGLTEXCOORD4HNVPROC glTexCoord4hNV;
+extern PFNGLTEXCOORD4HVNVPROC glTexCoord4hvNV;
+extern PFNGLMULTITEXCOORD1HNVPROC glMultiTexCoord1hNV;
+extern PFNGLMULTITEXCOORD1HVNVPROC glMultiTexCoord1hvNV;
+extern PFNGLMULTITEXCOORD2HNVPROC glMultiTexCoord2hNV;
+extern PFNGLMULTITEXCOORD2HVNVPROC glMultiTexCoord2hvNV;
+extern PFNGLMULTITEXCOORD3HNVPROC glMultiTexCoord3hNV;
+extern PFNGLMULTITEXCOORD3HVNVPROC glMultiTexCoord3hvNV;
+extern PFNGLMULTITEXCOORD4HNVPROC glMultiTexCoord4hNV;
+extern PFNGLMULTITEXCOORD4HVNVPROC glMultiTexCoord4hvNV;
+extern PFNGLFOGCOORDHNVPROC glFogCoordhNV;
+extern PFNGLFOGCOORDHVNVPROC glFogCoordhvNV;
+extern PFNGLSECONDARYCOLOR3HNVPROC glSecondaryColor3hNV;
+extern PFNGLSECONDARYCOLOR3HVNVPROC glSecondaryColor3hvNV;
+extern PFNGLVERTEXWEIGHTHNVPROC glVertexWeighthNV;
+extern PFNGLVERTEXWEIGHTHVNVPROC glVertexWeighthvNV;
+extern PFNGLVERTEXATTRIB1HNVPROC glVertexAttrib1hNV;
+extern PFNGLVERTEXATTRIB1HVNVPROC glVertexAttrib1hvNV;
+extern PFNGLVERTEXATTRIB2HNVPROC glVertexAttrib2hNV;
+extern PFNGLVERTEXATTRIB2HVNVPROC glVertexAttrib2hvNV;
+extern PFNGLVERTEXATTRIB3HNVPROC glVertexAttrib3hNV;
+extern PFNGLVERTEXATTRIB3HVNVPROC glVertexAttrib3hvNV;
+extern PFNGLVERTEXATTRIB4HNVPROC glVertexAttrib4hNV;
+extern PFNGLVERTEXATTRIB4HVNVPROC glVertexAttrib4hvNV;
+extern PFNGLVERTEXATTRIBS1HVNVPROC glVertexAttribs1hvNV;
+extern PFNGLVERTEXATTRIBS2HVNVPROC glVertexAttribs2hvNV;
+extern PFNGLVERTEXATTRIBS3HVNVPROC glVertexAttribs3hvNV;
+extern PFNGLVERTEXATTRIBS4HVNVPROC glVertexAttribs4hvNV;
+
+/* GL_NV_pixel_data_range */
+extern PFNGLPIXELDATARANGENVPROC glPixelDataRangeNV;
+extern PFNGLFLUSHPIXELDATARANGENVPROC glFlushPixelDataRangeNV;
+
+/* GL_NV_primitive_restart */
+extern PFNGLPRIMITIVERESTARTNVPROC glPrimitiveRestartNV;
+extern PFNGLPRIMITIVERESTARTINDEXNVPROC glPrimitiveRestartIndexNV;
+
+/* GL_NV_texture_expand_normal */
+
+/* GL_NV_vertex_program2 */
+
+/* GL_ATI_map_object_buffer */
+extern PFNGLMAPOBJECTBUFFERATIPROC glMapObjectBufferATI;
+extern PFNGLUNMAPOBJECTBUFFERATIPROC glUnmapObjectBufferATI;
+
+/* GL_ATI_separate_stencil */
+extern PFNGLSTENCILOPSEPARATEATIPROC glStencilOpSeparateATI;
+extern PFNGLSTENCILFUNCSEPARATEATIPROC glStencilFuncSeparateATI;
+
+/* GL_ATI_vertex_attrib_array_object */
+extern PFNGLVERTEXATTRIBARRAYOBJECTATIPROC glVertexAttribArrayObjectATI;
+extern PFNGLGETVERTEXATTRIBARRAYOBJECTFVATIPROC glGetVertexAttribArrayObjectfvATI;
+extern PFNGLGETVERTEXATTRIBARRAYOBJECTIVATIPROC glGetVertexAttribArrayObjectivATI;
+
+/* GL_OES_read_format */
+
+/* GL_EXT_depth_bounds_test */
+extern PFNGLDEPTHBOUNDSEXTPROC glDepthBoundsEXT;
+
+/* GL_EXT_texture_mirror_clamp */
+
+/* GL_EXT_blend_equation_separate */
+extern PFNGLBLENDEQUATIONSEPARATEEXTPROC glBlendEquationSeparateEXT;
+
+/* GL_MESA_pack_invert */
+
+/* GL_MESA_ycbcr_texture */
+
+/* GL_EXT_pixel_buffer_object */
+
+/* GL_NV_fragment_program_option */
+
+/* GL_NV_fragment_program2 */
+
+/* GL_NV_vertex_program2_option */
+
+/* GL_NV_vertex_program3 */
+
+
+/* The following variables can be used after a call to egl_InitExtensions() to
+ * check if an extension is supported and has been initialized. */
+
+
+extern int EGL_HAS_GL_VERSION_1_2;
+extern int EGL_HAS_GL_VERSION_1_3;
+extern int EGL_HAS_GL_VERSION_1_4;
+extern int EGL_HAS_GL_VERSION_1_5;
+extern int EGL_HAS_GL_VERSION_2_0;
+extern int EGL_HAS_GL_ARB_multitexture;
+extern int EGL_HAS_GL_ARB_transpose_matrix;
+extern int EGL_HAS_GL_ARB_multisample;
+extern int EGL_HAS_GL_ARB_texture_env_add;
+extern int EGL_HAS_GL_ARB_texture_cube_map;
+extern int EGL_HAS_GL_ARB_texture_compression;
+extern int EGL_HAS_GL_ARB_texture_border_clamp;
+extern int EGL_HAS_GL_ARB_point_parameters;
+extern int EGL_HAS_GL_ARB_vertex_blend;
+extern int EGL_HAS_GL_ARB_matrix_palette;
+extern int EGL_HAS_GL_ARB_texture_env_combine;
+extern int EGL_HAS_GL_ARB_texture_env_crossbar;
+extern int EGL_HAS_GL_ARB_texture_env_dot3;
+extern int EGL_HAS_GL_ARB_texture_mirrored_repeat;
+extern int EGL_HAS_GL_ARB_depth_texture;
+extern int EGL_HAS_GL_ARB_shadow;
+extern int EGL_HAS_GL_ARB_shadow_ambient;
+extern int EGL_HAS_GL_ARB_window_pos;
+extern int EGL_HAS_GL_ARB_vertex_program;
+extern int EGL_HAS_GL_ARB_fragment_program;
+extern int EGL_HAS_GL_ARB_vertex_buffer_object;
+extern int EGL_HAS_GL_ARB_occlusion_query;
+extern int EGL_HAS_GL_ARB_shader_objects;
+extern int EGL_HAS_GL_ARB_vertex_shader;
+extern int EGL_HAS_GL_ARB_fragment_shader;
+extern int EGL_HAS_GL_ARB_shading_language_100;
+extern int EGL_HAS_GL_ARB_texture_non_power_of_two;
+extern int EGL_HAS_GL_ARB_point_sprite;
+extern int EGL_HAS_GL_ARB_fragment_program_shadow;
+extern int EGL_HAS_GL_ARB_draw_buffers;
+extern int EGL_HAS_GL_ARB_texture_rectangle;
+extern int EGL_HAS_GL_ARB_color_buffer_float;
+extern int EGL_HAS_GL_ARB_half_float_pixel;
+extern int EGL_HAS_GL_ARB_texture_float;
+extern int EGL_HAS_GL_ARB_pixel_buffer_object;
+extern int EGL_HAS_GL_EXT_abgr;
+extern int EGL_HAS_GL_EXT_blend_color;
+extern int EGL_HAS_GL_EXT_polygon_offset;
+extern int EGL_HAS_GL_EXT_texture;
+extern int EGL_HAS_GL_EXT_texture3D;
+extern int EGL_HAS_GL_SGIS_texture_filter4;
+extern int EGL_HAS_GL_EXT_subtexture;
+extern int EGL_HAS_GL_EXT_copy_texture;
+extern int EGL_HAS_GL_EXT_histogram;
+extern int EGL_HAS_GL_EXT_convolution;
+extern int EGL_HAS_GL_EXT_color_matrix;
+extern int EGL_HAS_GL_SGI_color_table;
+extern int EGL_HAS_GL_SGIX_pixel_texture;
+extern int EGL_HAS_GL_SGIS_pixel_texture;
+extern int EGL_HAS_GL_SGIS_texture4D;
+extern int EGL_HAS_GL_SGI_texture_color_table;
+extern int EGL_HAS_GL_EXT_cmyka;
+extern int EGL_HAS_GL_EXT_texture_object;
+extern int EGL_HAS_GL_SGIS_detail_texture;
+extern int EGL_HAS_GL_SGIS_sharpen_texture;
+extern int EGL_HAS_GL_EXT_packed_pixels;
+extern int EGL_HAS_GL_SGIS_texture_lod;
+extern int EGL_HAS_GL_SGIS_multisample;
+extern int EGL_HAS_GL_EXT_rescale_normal;
+extern int EGL_HAS_GL_EXT_vertex_array;
+extern int EGL_HAS_GL_EXT_misc_attribute;
+extern int EGL_HAS_GL_SGIS_generate_mipmap;
+extern int EGL_HAS_GL_SGIX_clipmap;
+extern int EGL_HAS_GL_SGIX_shadow;
+extern int EGL_HAS_GL_SGIS_texture_edge_clamp;
+extern int EGL_HAS_GL_SGIS_texture_border_clamp;
+extern int EGL_HAS_GL_EXT_blend_minmax;
+extern int EGL_HAS_GL_EXT_blend_subtract;
+extern int EGL_HAS_GL_EXT_blend_logic_op;
+extern int EGL_HAS_GL_SGIX_interlace;
+extern int EGL_HAS_GL_SGIX_pixel_tiles;
+extern int EGL_HAS_GL_SGIX_texture_select;
+extern int EGL_HAS_GL_SGIX_sprite;
+extern int EGL_HAS_GL_SGIX_texture_multi_buffer;
+extern int EGL_HAS_GL_EXT_point_parameters;
+extern int EGL_HAS_GL_SGIS_point_parameters;
+extern int EGL_HAS_GL_SGIX_instruments;
+extern int EGL_HAS_GL_SGIX_texture_scale_bias;
+extern int EGL_HAS_GL_SGIX_framezoom;
+extern int EGL_HAS_GL_SGIX_tag_sample_buffer;
+extern int EGL_HAS_GL_SGIX_polynomial_ffd;
+extern int EGL_HAS_GL_SGIX_reference_plane;
+extern int EGL_HAS_GL_SGIX_flush_raster;
+extern int EGL_HAS_GL_SGIX_depth_texture;
+extern int EGL_HAS_GL_SGIS_fog_function;
+extern int EGL_HAS_GL_SGIX_fog_offset;
+extern int EGL_HAS_GL_HP_image_transform;
+extern int EGL_HAS_GL_HP_convolution_border_modes;
+extern int EGL_HAS_GL_SGIX_texture_add_env;
+extern int EGL_HAS_GL_EXT_color_subtable;
+extern int EGL_HAS_GL_PGI_vertex_hints;
+extern int EGL_HAS_GL_PGI_misc_hints;
+extern int EGL_HAS_GL_EXT_paletted_texture;
+extern int EGL_HAS_GL_EXT_clip_volume_hint;
+extern int EGL_HAS_GL_SGIX_list_priority;
+extern int EGL_HAS_GL_SGIX_ir_instrument1;
+extern int EGL_HAS_GL_SGIX_calligraphic_fragment;
+extern int EGL_HAS_GL_SGIX_texture_lod_bias;
+extern int EGL_HAS_GL_SGIX_shadow_ambient;
+extern int EGL_HAS_GL_EXT_index_texture;
+extern int EGL_HAS_GL_EXT_index_material;
+extern int EGL_HAS_GL_EXT_index_func;
+extern int EGL_HAS_GL_EXT_index_array_formats;
+extern int EGL_HAS_GL_EXT_compiled_vertex_array;
+extern int EGL_HAS_GL_EXT_cull_vertex;
+extern int EGL_HAS_GL_SGIX_ycrcb;
+extern int EGL_HAS_GL_SGIX_fragment_lighting;
+extern int EGL_HAS_GL_IBM_rasterpos_clip;
+extern int EGL_HAS_GL_HP_texture_lighting;
+extern int EGL_HAS_GL_EXT_draw_range_elements;
+extern int EGL_HAS_GL_WIN_phong_shading;
+extern int EGL_HAS_GL_WIN_specular_fog;
+extern int EGL_HAS_GL_EXT_light_texture;
+extern int EGL_HAS_GL_SGIX_blend_alpha_minmax;
+extern int EGL_HAS_GL_EXT_bgra;
+extern int EGL_HAS_GL_SGIX_async;
+extern int EGL_HAS_GL_SGIX_async_pixel;
+extern int EGL_HAS_GL_SGIX_async_histogram;
+extern int EGL_HAS_GL_INTEL_parallel_arrays;
+extern int EGL_HAS_GL_HP_occlusion_test;
+extern int EGL_HAS_GL_EXT_pixel_transform;
+extern int EGL_HAS_GL_EXT_pixel_transform_color_table;
+extern int EGL_HAS_GL_EXT_shared_texture_palette;
+extern int EGL_HAS_GL_EXT_separate_specular_color;
+extern int EGL_HAS_GL_EXT_secondary_color;
+extern int EGL_HAS_GL_EXT_texture_perturb_normal;
+extern int EGL_HAS_GL_EXT_multi_draw_arrays;
+extern int EGL_HAS_GL_EXT_fog_coord;
+extern int EGL_HAS_GL_REND_screen_coordinates;
+extern int EGL_HAS_GL_EXT_coordinate_frame;
+extern int EGL_HAS_GL_EXT_texture_env_combine;
+extern int EGL_HAS_GL_APPLE_specular_vector;
+extern int EGL_HAS_GL_APPLE_transform_hint;
+extern int EGL_HAS_GL_SGIX_fog_scale;
+extern int EGL_HAS_GL_SUNX_constant_data;
+extern int EGL_HAS_GL_SUN_global_alpha;
+extern int EGL_HAS_GL_SUN_triangle_list;
+extern int EGL_HAS_GL_SUN_vertex;
+extern int EGL_HAS_GL_EXT_blend_func_separate;
+extern int EGL_HAS_GL_INGR_blend_func_separate;
+extern int EGL_HAS_GL_INGR_color_clamp;
+extern int EGL_HAS_GL_INGR_interlace_read;
+extern int EGL_HAS_GL_EXT_stencil_wrap;
+extern int EGL_HAS_GL_EXT_422_pixels;
+extern int EGL_HAS_GL_NV_texgen_reflection;
+extern int EGL_HAS_GL_SUN_convolution_border_modes;
+extern int EGL_HAS_GL_EXT_texture_env_add;
+extern int EGL_HAS_GL_EXT_texture_lod_bias;
+extern int EGL_HAS_GL_EXT_texture_filter_anisotropic;
+extern int EGL_HAS_GL_EXT_vertex_weighting;
+extern int EGL_HAS_GL_NV_light_max_exponent;
+extern int EGL_HAS_GL_NV_vertex_array_range;
+extern int EGL_HAS_GL_NV_register_combiners;
+extern int EGL_HAS_GL_NV_fog_distance;
+extern int EGL_HAS_GL_NV_texgen_emboss;
+extern int EGL_HAS_GL_NV_blend_square;
+extern int EGL_HAS_GL_NV_texture_env_combine4;
+extern int EGL_HAS_GL_MESA_resize_buffers;
+extern int EGL_HAS_GL_MESA_window_pos;
+extern int EGL_HAS_GL_IBM_cull_vertex;
+extern int EGL_HAS_GL_IBM_multimode_draw_arrays;
+extern int EGL_HAS_GL_IBM_vertex_array_lists;
+extern int EGL_HAS_GL_SGIX_subsample;
+extern int EGL_HAS_GL_SGIX_ycrcba;
+extern int EGL_HAS_GL_SGIX_ycrcb_subsample;
+extern int EGL_HAS_GL_SGIX_depth_pass_instrument;
+extern int EGL_HAS_GL_3DFX_texture_compression_FXT1;
+extern int EGL_HAS_GL_3DFX_multisample;
+extern int EGL_HAS_GL_3DFX_tbuffer;
+extern int EGL_HAS_GL_EXT_multisample;
+extern int EGL_HAS_GL_SGIX_vertex_preclip;
+extern int EGL_HAS_GL_SGIX_convolution_accuracy;
+extern int EGL_HAS_GL_SGIX_resample;
+extern int EGL_HAS_GL_SGIS_point_line_texgen;
+extern int EGL_HAS_GL_SGIS_texture_color_mask;
+extern int EGL_HAS_GL_SGIX_igloo_interface;
+extern int EGL_HAS_GL_EXT_texture_env_dot3;
+extern int EGL_HAS_GL_ATI_texture_mirror_once;
+extern int EGL_HAS_GL_NV_fence;
+extern int EGL_HAS_GL_NV_evaluators;
+extern int EGL_HAS_GL_NV_packed_depth_stencil;
+extern int EGL_HAS_GL_NV_register_combiners2;
+extern int EGL_HAS_GL_NV_texture_compression_vtc;
+extern int EGL_HAS_GL_NV_texture_rectangle;
+extern int EGL_HAS_GL_NV_texture_shader;
+extern int EGL_HAS_GL_NV_texture_shader2;
+extern int EGL_HAS_GL_NV_vertex_array_range2;
+extern int EGL_HAS_GL_NV_vertex_program;
+extern int EGL_HAS_GL_SGIX_texture_coordinate_clamp;
+extern int EGL_HAS_GL_SGIX_scalebias_hint;
+extern int EGL_HAS_GL_OML_interlace;
+extern int EGL_HAS_GL_OML_subsample;
+extern int EGL_HAS_GL_OML_resample;
+extern int EGL_HAS_GL_NV_copy_depth_to_color;
+extern int EGL_HAS_GL_ATI_envmap_bumpmap;
+extern int EGL_HAS_GL_ATI_fragment_shader;
+extern int EGL_HAS_GL_ATI_pn_triangles;
+extern int EGL_HAS_GL_ATI_vertex_array_object;
+extern int EGL_HAS_GL_EXT_vertex_shader;
+extern int EGL_HAS_GL_ATI_vertex_streams;
+extern int EGL_HAS_GL_ATI_element_array;
+extern int EGL_HAS_GL_SUN_mesh_array;
+extern int EGL_HAS_GL_SUN_slice_accum;
+extern int EGL_HAS_GL_NV_multisample_filter_hint;
+extern int EGL_HAS_GL_NV_depth_clamp;
+extern int EGL_HAS_GL_NV_occlusion_query;
+extern int EGL_HAS_GL_NV_point_sprite;
+extern int EGL_HAS_GL_NV_texture_shader3;
+extern int EGL_HAS_GL_NV_vertex_program1_1;
+extern int EGL_HAS_GL_EXT_shadow_funcs;
+extern int EGL_HAS_GL_EXT_stencil_two_side;
+extern int EGL_HAS_GL_ATI_text_fragment_shader;
+extern int EGL_HAS_GL_APPLE_client_storage;
+extern int EGL_HAS_GL_APPLE_element_array;
+extern int EGL_HAS_GL_APPLE_fence;
+extern int EGL_HAS_GL_APPLE_vertex_array_object;
+extern int EGL_HAS_GL_APPLE_vertex_array_range;
+extern int EGL_HAS_GL_APPLE_ycbcr_422;
+extern int EGL_HAS_GL_S3_s3tc;
+extern int EGL_HAS_GL_ATI_draw_buffers;
+extern int EGL_HAS_GL_ATI_pixel_format_float;
+extern int EGL_HAS_GL_ATI_texture_env_combine3;
+extern int EGL_HAS_GL_ATI_texture_float;
+extern int EGL_HAS_GL_NV_float_buffer;
+extern int EGL_HAS_GL_NV_fragment_program;
+extern int EGL_HAS_GL_NV_half_float;
+extern int EGL_HAS_GL_NV_pixel_data_range;
+extern int EGL_HAS_GL_NV_primitive_restart;
+extern int EGL_HAS_GL_NV_texture_expand_normal;
+extern int EGL_HAS_GL_NV_vertex_program2;
+extern int EGL_HAS_GL_ATI_map_object_buffer;
+extern int EGL_HAS_GL_ATI_separate_stencil;
+extern int EGL_HAS_GL_ATI_vertex_attrib_array_object;
+extern int EGL_HAS_GL_OES_read_format;
+extern int EGL_HAS_GL_EXT_depth_bounds_test;
+extern int EGL_HAS_GL_EXT_texture_mirror_clamp;
+extern int EGL_HAS_GL_EXT_blend_equation_separate;
+extern int EGL_HAS_GL_MESA_pack_invert;
+extern int EGL_HAS_GL_MESA_ycbcr_texture;
+extern int EGL_HAS_GL_EXT_pixel_buffer_object;
+extern int EGL_HAS_GL_NV_fragment_program_option;
+extern int EGL_HAS_GL_NV_fragment_program2;
+extern int EGL_HAS_GL_NV_vertex_program2_option;
+extern int EGL_HAS_GL_NV_vertex_program3;
+
+extern int EGL_HAS_GL_ARB_imaging;
+extern int EGL_HAS_GL_EXT_texture_compression_s3tc;
+extern int EGL_HAS_GL_EXT_texture_cube_map;
+extern int EGL_HAS_GL_FfdMaskSGIX;
+extern int EGL_HAS_GL_IBM_texture_mirrored_repeat;
+extern int EGL_HAS_GL_INGR_palette_buffer;
+extern int EGL_HAS_GL_INTEL_texture_scissor;
+extern int EGL_HAS_GL_SGIS_texture_select;
+extern int EGL_HAS_GL_SGIX_impact_pixel_texture;
+extern int EGL_HAS_GL_SGI_color_matrix;
+extern int EGL_HAS_GL_SGI_depth_pass_instrument;
+
+
+/* Call this function to initialize all extensions. The return value is 1 if
+ * all extensions in the library have been initialized properly.
+ * If not all extension have been initialized the return value is 0.
+ * You can use the variables above to check if a specific extension is
+ * supported by the hardware and has been initialized.*/
+extern int egl_InitExtensions(void);
+
+
+/* Call this function to check for the existence of a particular OpenGL
+ * extension. */
+extern int egl_hasExtension(const char* ext);
+
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

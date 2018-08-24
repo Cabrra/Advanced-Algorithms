@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\TO DO">
+      <UniqueIdentifier>{1fa461b8-ac95-4d0f-a73c-d291d944ecab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Base Code">
+      <UniqueIdentifier>{b4a3bc99-d7b9-43cc-8373-62bcf14044a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\TO DO">
+      <UniqueIdentifier>{aaa25c4c-5347-46b9-b864-3cc45ef90499}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Base Code">
+      <UniqueIdentifier>{8f902805-78ba-477c-830f-7ee62c523dd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Advanced Collisions Lib\Advanced Collisions.cpp">
+      <Filter>Source Files\TO DO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EDBase\BMPFile.cpp">
+      <Filter>Source Files\Base Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EDAppOne\EDApp.cpp">
+      <Filter>Source Files\Base Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EDBase\EDCamera.cpp">
+      <Filter>Source Files\Base Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EDBase\EDCommon.cpp">
+      <Filter>Source Files\Base Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EDBase\EDDemo.cpp">
+      <Filter>Source Files\Base Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EDBase\extgl.c">
+      <Filter>Source Files\Base Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MayaBin Lib\MayaBin.cpp">
+      <Filter>Source Files\Base Code</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Advanced Collisions Lib\Advanced Collisions.h">
+      <Filter>Header Files\TO DO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EDAppOne\EDApp.h">
+      <Filter>Header Files\Base Code</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Basecode">
+      <UniqueIdentifier>{3ce16be1-3d4a-41b7-8010-5971af52175b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Basecode">
+      <UniqueIdentifier>{51e35371-098e-400e-a3d9-e26efb9869a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EDApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BMPFile.cpp">
+      <Filter>Source Files\Basecode</Filter>
+    </ClCompile>
+    <ClCompile Include="EDCamera.cpp">
+      <Filter>Source Files\Basecode</Filter>
+    </ClCompile>
+    <ClCompile Include="extgl.c">
+      <Filter>Source Files\Basecode</Filter>
+    </ClCompile>
+    <ClCompile Include="GLMain.cpp">
+      <Filter>Source Files\Basecode</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EDApp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BMPFile.h">
+      <Filter>Header Files\Basecode</Filter>
+    </ClInclude>
+    <ClInclude Include="EDAABB.h">
+      <Filter>Header Files\Basecode</Filter>
+    </ClInclude>
+    <ClInclude Include="EDBVTree.h">
+      <Filter>Header Files\Basecode</Filter>
+    </ClInclude>
+    <ClInclude Include="EDCamera.h">
+      <Filter>Header Files\Basecode</Filter>
+    </ClInclude>
+    <ClInclude Include="EDDefault.h">
+      <Filter>Header Files\Basecode</Filter>
+    </ClInclude>
+    <ClInclude Include="EDFrame.h">
+      <Filter>Header Files\Basecode</Filter>
+    </ClInclude>
+    <ClInclude Include="EDTriangle.h">
+      <Filter>Header Files\Basecode</Filter>
+    </ClInclude>
+    <ClInclude Include="extgl.h">
+      <Filter>Header Files\Basecode</Filter>
+    </ClInclude>
+    <ClInclude Include="GL.h">
+      <Filter>Header Files\Basecode</Filter>
+    </ClInclude>
+    <ClInclude Include="glext.h">
+      <Filter>Header Files\Basecode</Filter>
+    </ClInclude>
+    <ClInclude Include="GLU.h">
+      <Filter>Header Files\Basecode</Filter>
+    </ClInclude>
+    <ClInclude Include="matrix3.h">
+      <Filter>Header Files\Basecode</Filter>
+    </ClInclude>
+    <ClInclude Include="matrix4.h">
+      <Filter>Header Files\Basecode</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Header Files\Basecode</Filter>
+    </ClInclude>
+    <ClInclude Include="vec3.h">
+      <Filter>Header Files\Basecode</Filter>
+    </ClInclude>
+    <ClInclude Include="vec4.h">
+      <Filter>Header Files\Basecode</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

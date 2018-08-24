@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\TO DO">
+      <UniqueIdentifier>{bc2b4eda-dc38-45e3-a5a4-46572a22e7ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Base Code">
+      <UniqueIdentifier>{05f1956b-cbe1-4408-9e32-f511f691fc5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\TO DO">
+      <UniqueIdentifier>{e8b7c6da-8449-4d4a-b9c7-eb450e52ff72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Base Code">
+      <UniqueIdentifier>{09008a06-d6be-45cb-af62-aa4e3c1851c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Buggy.cpp">
+      <Filter>Source Files\TO DO</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Bullet.cpp">
+      <Filter>Source Files\TO DO</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Crosshair.cpp">
+      <Filter>Source Files\TO DO</Filter>
+    </ClCompile>
+    <ClCompile Include="source\EDApp.cpp">
+      <Filter>Source Files\TO DO</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Mortar.cpp">
+      <Filter>Source Files\TO DO</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Target.cpp">
+      <Filter>Source Files\TO DO</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BMPFile.cpp">
+      <Filter>Source Files\Base Code</Filter>
+    </ClCompile>
+    <ClCompile Include="source\EDCamera.cpp">
+      <Filter>Source Files\Base Code</Filter>
+    </ClCompile>
+    <ClCompile Include="source\EDCommon.cpp">
+      <Filter>Source Files\Base Code</Filter>
+    </ClCompile>
+    <ClCompile Include="source\EDDemo.cpp">
+      <Filter>Source Files\Base Code</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Explosion.cpp">
+      <Filter>Source Files\Base Code</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extgl.c">
+      <Filter>Source Files\Base Code</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\Buggy.h">
+      <Filter>Header Files\TO DO</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Bullet.h">
+      <Filter>Header Files\TO DO</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Crosshair.h">
+      <Filter>Header Files\TO DO</Filter>
+    </ClInclude>
+    <ClInclude Include="source\EDApp.h">
+      <Filter>Header Files\TO DO</Filter>
+    </ClInclude>
+    <ClInclude Include="source\EDFrame.h">
+      <Filter>Header Files\TO DO</Filter>
+    </ClInclude>
+    <ClInclude Include="source\matrix4.h">
+      <Filter>Header Files\TO DO</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Mortar.h">
+      <Filter>Header Files\TO DO</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Target.h">
+      <Filter>Header Files\TO DO</Filter>
+    </ClInclude>
+    <ClInclude Include="source\vec3.h">
+      <Filter>Header Files\TO DO</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BMPFile.h">
+      <Filter>Header Files\Base Code</Filter>
+    </ClInclude>
+    <ClInclude Include="source\EDAABB.h">
+      <Filter>Header Files\Base Code</Filter>
+    </ClInclude>
+    <ClInclude Include="source\EDBVTree.h">
+      <Filter>Header Files\Base Code</Filter>
+    </ClInclude>
+    <ClInclude Include="source\EDCamera.h">
+      <Filter>Header Files\Base Code</Filter>
+    </ClInclude>
+    <ClInclude Include="source\EDCommon.h">
+      <Filter>Header Files\Base Code</Filter>
+    </ClInclude>
+    <ClInclude Include="source\EDDefault.h">
+      <Filter>Header Files\Base Code</Filter>
+    </ClInclude>
+    <ClInclude Include="source\EDDemo.h">
+      <Filter>Header Files\Base Code</Filter>
+    </ClInclude>
+    <ClInclude Include="source\EDMesh.h">
+      <Filter>Header Files\Base Code</Filter>
+    </ClInclude>
+    <ClInclude Include="source\EDTriangle.h">
+      <Filter>Header Files\Base Code</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Explosion.h">
+      <Filter>Header Files\Base Code</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extgl.h">
+      <Filter>Header Files\Base Code</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GL.h">
+      <Filter>Header Files\Base Code</Filter>
+    </ClInclude>
+    <ClInclude Include="source\glext.h">
+      <Filter>Header Files\Base Code</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GLU.h">
+      <Filter>Header Files\Base Code</Filter>
+    </ClInclude>
+    <ClInclude Include="source\glut.h">
+      <Filter>Header Files\Base Code</Filter>
+    </ClInclude>
+    <ClInclude Include="source\matrix3.h">
+      <Filter>Header Files\Base Code</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Timer.h">
+      <Filter>Header Files\Base Code</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
