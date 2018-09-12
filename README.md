@@ -3,7 +3,7 @@ Advanced Algorithms
 
 #### 1. Collisions
 
-![Collision](https://github.com/Cabrra/cabrra.github.io/blob/master/Images/advancedAlg/collisions.png)
+![Collision](https://github.com/Cabrra/cabrra.github.io/raw/master/Images/advancedAlg/collisions.png)
 
 This project was designed to detecting intersection between several different primitive types:
 
@@ -31,7 +31,7 @@ This project was designed to detecting intersection between several different pr
 
 #### 2. Bounding Volume Hierarchy
 
-![BVH](https://github.com/Cabrra/cabrra.github.io/blob/master/Images/advancedAlg/BVH.png)
+![BVH](https://github.com/Cabrra/cabrra.github.io/raw/master/Images/advancedAlg/BVH.png)
 
 This BVH implementation uses templating and the [Curiously Recurring Template Pattern](http://en.wikipedia.org/wiki/Curiously_recurring_template_pattern). This allows for creation of BVHs with leaves containing any data type, as long as the derived leaf class supports construction, building, and splitting.
 
