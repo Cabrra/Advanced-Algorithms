@@ -13,21 +13,21 @@ This project was designed to detecting intersection between several different pr
 + Capsule to Triangle
 + Moving Sphere Against Polyhedron
 
-+ Controls – Collisions
-	+ W/S/A/D – Movement
-	+ RightMouse – MouseLook Control
-	+ LeftMouse – Fire
-	+ 1 – Switch to Ray/Triangle test state
-	+ 2 – Switch to Ray/Sphere test state
-	+ 3 – Switch to Ray/Cylinder test state
-	+ 4 – Switch to Ray/Capsule test state
-	+ 5 – Switch to MovingSphere/Triangle test state
-	+ 6 – Switch to MovingSphere/Mesh test state
-+ Controls – Reactions
-	+ W/S/A/D – Movement
-	+ RightMouse – MouseLook Control
-	+ Space – Jump
-	+ Q/E – Zoom in/out
++ Controls â€“ Collisions
+	+ W/S/A/D â€“ Movement
+	+ RightMouse â€“ MouseLook Control
+	+ LeftMouse â€“ Fire
+	+ 1 â€“ Switch to Ray/Triangle test state
+	+ 2 â€“ Switch to Ray/Sphere test state
+	+ 3 â€“ Switch to Ray/Cylinder test state
+	+ 4 â€“ Switch to Ray/Capsule test state
+	+ 5 â€“ Switch to MovingSphere/Triangle test state
+	+ 6 â€“ Switch to MovingSphere/Mesh test state
++ Controls â€“ Reactions
+	+ W/S/A/D â€“ Movement
+	+ RightMouse â€“ MouseLook Control
+	+ Space â€“ Jump
+	+ Q/E â€“ Zoom in/out
 
 #### 2. Bounding Volume Hierarchy
 
@@ -50,30 +50,30 @@ This BVH implementation uses templating and the [Curiously Recurring Template Pa
 
 #### 3. Buggy
 
-![Buggy](https://github.com/Cabrra/cabrra.github.io/blob/master/Images/advancedAlg/buggyPick.png)
+![Buggy](https://github.com/Cabrra/cabrra.github.io/raw/master/Images/advancedAlg/buggyPick.png)
 
 This lab trained in the implementation of various matrix behaviors, weapon behaviors, and collision detection and response algorithms.
 
-1)Terrain following algorithm on the Buggy’s body using the line-to-triangle intersection test. 
+1)Terrain following algorithm on the Buggyâ€™s body using the line-to-triangle intersection test. 
 2)Line-to-triangle intersection test with the mortar and the terrain.
 3)Line-to-triangle test with the crosshair and the terrain.
-4)Ground clamping on the Buggy’s body using the line-to-triangle intersection test and the ground clamping algorithm.
+4)Ground clamping on the Buggyâ€™s body using the line-to-triangle intersection test and the ground clamping algorithm.
 5)Translate the mortar by (-0.001f * fTime) units on the world-Y for gravity (Mortar's lifecycle is 60 seconds).
 6)For all the targets in the world, a sphere to sphere intersection test is performed with the sphere of the bullet (bullet lifecycle is 30 seconds).
 7)If the current camera mode is not MOUSE_LOOK and the right mouse button is down, perform the mouse-look algorithm.
-8)If the buggy moves forward or backward, perform the turn-to algorithm on the buggy’s body.
+8)If the buggy moves forward or backward, perform the turn-to algorithm on the buggyâ€™s body.
 
 + Controls
-	+ PageUp/PageDown – Cycle through cameras
-	+ W – Move the buggy forward
-	+ S – Move the buggy backward
-	+ Right Mouse Button + Mouse Move – Rotate the camera or the buggy’s gun.
-	+ Left Mouse Button – Fire a bullet from the gun
-	+ Space Bar – Fire a mortar from the gun
+	+ PageUp/PageDown â€“ Cycle through cameras
+	+ W â€“ Move the buggy forward
+	+ S â€“ Move the buggy backward
+	+ Right Mouse Button + Mouse Move â€“ Rotate the camera or the buggyâ€™s gun.
+	+ Left Mouse Button â€“ Fire a bullet from the gun
+	+ Space Bar â€“ Fire a mortar from the gun
 
 #### 4. Picking
 
-![Picking](https://github.com/Cabrra/cabrra.github.io/blob/master/Images/advancedAlg/picking.png)
+![Picking](https://github.com/Cabrra/cabrra.github.io/raw/master/Images/advancedAlg/picking.png)
 
 This implements the triangle picking algorithm using a line segment to triangle test.
 
@@ -83,7 +83,7 @@ This implements the triangle picking algorithm using a line segment to triangle 
 	
 #### 5. Frustum Culling
 
-![Frustum Culling](https://github.com/Cabrra/cabrra.github.io/blob/master/Images/advancedAlg/frustum.png)
+![Frustum Culling](https://github.com/Cabrra/cabrra.github.io/raw/master/Images/advancedAlg/frustum.png)
 	
 Implementation of frustum culling and various basic collision tests.
 
@@ -96,7 +96,7 @@ Implementation of frustum culling and various basic collision tests.
 
 #### 6. KdTrees
 
-![KD Tree](https://github.com/Cabrra/cabrra.github.io/blob/master/Images/advancedAlg/KDTree.png)
+![KD Tree](https://github.com/Cabrra/cabrra.github.io/raw/master/Images/advancedAlg/KDTree.png)
 
 Implementation of a KdTree for spatial partitioning.
 
@@ -127,7 +127,7 @@ This test draws the result of testing a SceneObject for collision against the ot
 	
 #### 7. Sphere to Triangle
 
-![Sphere To Triangle](https://github.com/Cabrra/cabrra.github.io/blob/master/Images/advancedAlg/sphereTriangle.png)
+![Sphere To Triangle](https://github.com/Cabrra/cabrra.github.io/raw/master/Images/advancedAlg/sphereTriangle.png)
 
 This was one of the first labs from Engine Development 3. All the guidance comments are in the EDApp.cpp file. As a final output we should have highlighted the colliding triangles in red.
 
