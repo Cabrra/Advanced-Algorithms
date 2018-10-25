@@ -3,7 +3,7 @@ Advanced Algorithms
 
 #### 1. Collisions
 
-![Collision](https://raw.githubusercontent.com/Cabrra/cabrra.github.io/master/Images/advancedAlg/collisions.png?token=AI_Rbe-Y_mJUqfxhZ1NMGPkBXlf5Z0Xyks5bokbPwA%3D%3D)
+![Collision](/Images/collisions.png)
 
 This project was designed to detecting intersection between several different primitive types:
 
@@ -31,7 +31,7 @@ This project was designed to detecting intersection between several different pr
 
 #### 2. Bounding Volume Hierarchy
 
-![BVH](https://raw.githubusercontent.com/Cabrra/cabrra.github.io/master/Images/advancedAlg/BVH.png?token=AI_RbSANuLOMPER-qmoXBGjFBZk-Y6cJks5bokbSwA%3D%3D)
+![BVH](/Images/BVH.png)
 
 This BVH implementation uses templating and the [Curiously Recurring Template Pattern](http://en.wikipedia.org/wiki/Curiously_recurring_template_pattern). This allows for creation of BVHs with leaves containing any data type, as long as the derived leaf class supports construction, building, and splitting.
 
@@ -50,7 +50,7 @@ This BVH implementation uses templating and the [Curiously Recurring Template Pa
 
 #### 3. Buggy
 
-![Buggy](https://raw.githubusercontent.com/Cabrra/cabrra.github.io/master/Images/advancedAlg/buggyPick.png?token=AI_RbbBsfjiGzjAzQ40nkMIUwar32Ccbks5bokaHwA%3D%3D)
+![Buggy](/Images/buggyPick.png)
 
 This lab trained in the implementation of various matrix behaviors, weapon behaviors, and collision detection and response algorithms.
 
@@ -73,7 +73,7 @@ This lab trained in the implementation of various matrix behaviors, weapon behav
 
 #### 4. Picking
 
-![Picking](https://raw.githubusercontent.com/Cabrra/cabrra.github.io/master/Images/advancedAlg/picking.png?token=AI_RbQ4GDvFdYc9FS7AenyN7AEOR-ORtks5bokaKwA%3D%3D)
+![Picking](/Images/picking.png)
 
 This implements the triangle picking algorithm using a line segment to triangle test.
 
@@ -83,7 +83,7 @@ This implements the triangle picking algorithm using a line segment to triangle 
 	
 #### 5. Frustum Culling
 
-![Frustum Culling](https://raw.githubusercontent.com/Cabrra/cabrra.github.io/master/Images/advancedAlg/frustum.png?token=AI_RbQrbpkpBb6cxNES2hD1j68DPKUSuks5bokaMwA%3D%3D)
+![Frustum Culling](/Images/frustum.png)
 	
 Implementation of frustum culling and various basic collision tests.
 
@@ -96,7 +96,7 @@ Implementation of frustum culling and various basic collision tests.
 
 #### 6. KdTrees
 
-![KD Tree](https://raw.githubusercontent.com/Cabrra/cabrra.github.io/master/Images/advancedAlg/KDTree.png?token=AI_RbR5WMm2WNvsXU4ECXPsupYrum5_Yks5bokaOwA%3D%3D)
+![KD Tree](/Images/KDTree.png)
 
 Implementation of a KdTree for spatial partitioning.
 
@@ -127,7 +127,7 @@ This test draws the result of testing a SceneObject for collision against the ot
 	
 #### 7. Sphere to Triangle
 
-![Sphere To Triangle](https://raw.githubusercontent.com/Cabrra/cabrra.github.io/master/Images/advancedAlg/sphereTriangle.png?token=AI_RbZ_ktoLmoA-A-mxdUw3oelirecz0ks5bokaQwA%3D%3D)
+![Sphere To Triangle](/Images/sphereTriangle.png)
 
 This was one of the first labs from Engine Development 3. All the guidance comments are in the EDApp.cpp file. As a final output we should have highlighted the colliding triangles in red.
 
