@@ -77,7 +77,7 @@ This lab trained in the implementation of various matrix behaviors, weapon behav
 
 This implements the triangle picking algorithm using a line segment to triangle test.
 
-+Controls:
++ Controls:
 	+ Right Mouse Button - Control the camera with the mouse-look and WASD
 	+ Left Mouse Button - Pick a triangle from the terrain
 	
@@ -131,7 +131,7 @@ This test draws the result of testing a SceneObject for collision against the ot
 
 This was one of the first labs from Engine Development 3. All the guidance comments are in the EDApp.cpp file. As a final output we should have highlighted the colliding triangles in red.
 
-+Controls:
++ Controls:
 	+ Right Mouse Button - Control the camera with the mouse-look and WASD
 	+ Arrow keys - move ball	
 
